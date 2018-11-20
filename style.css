@@ -165,3 +165,64 @@ footer a{
     align-self: center;
     fill: white;
 }
+
+
+
+/*Responsividade*/
+@media(max-width:985px){
+    /*Texo do endereco*/
+    #footerGrupoCima{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    /*parte de baixo do footer*/
+    #footer1DT{
+        margin-left: 5%; 
+    }
+    #footer2DT{
+        margin-right: 5%; 
+    }
+}
+@media(max-width:880px){
+    /*textos do footer*/
+    .footerTexto{
+        font-size: 18px;
+    }
+    /*texto do endereço*/
+    #footerMapsDT .footerTexto{
+        font-size: 12px;
+    }
+}
+@media(max-width:750px){
+    #footer{
+        height: 60vh;
+    }
+    #footerGrupoCima{
+        height: 75%;
+    }
+    #footerGrupoBaixo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+    }
+    .footerDivTexto{
+        width: 80%;
+        height: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer1DT{
+        margin: 2% 0 0 0;
+
+    }
+    #footer2DT{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerTexto{
+        font-size: 22px;
+    }
+}
