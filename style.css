@@ -73,15 +73,44 @@ body{
     display: flex;
     align-items: center;
 }
+/*imagem do logo da PETR-AM*/
 #footerLogo{
     width: 100%;
     height: auto;
 }
+/*Div com o maps e o texto*/
+#footerMaps{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Texto do Maps*/
+#footerMapsDT{
+    width: 100%;
+    height: 20%;
+}
+
+/*Div Imagem do maps*/
+#footerMap{
+    width: 100%;
+    height: 80%;
+}
+/*O mapa propriamente dito*/
+#footerMap iframe{
+    width: 100%;
+    height: 100%;
+}
+/*Texo do endereco*/
+#footerMapsDT .footerTexto{
+    width: 100%;
+    font-size: 14px;
+}
 
 
-
-/*Parte debaixo do footer
-Aqui é o grupo com a parte de baixo do footer*/
+/*Parte debaixo do footer*/
+/*Aqui é o grupo com a parte de baixo do footer*/
 #footerGrupoBaixo{
     width: 100%;
     height: 20%;
@@ -102,7 +131,7 @@ Aqui é o grupo com a parte de baixo do footer*/
 }
 /*Div com o texto do footer*/
 .footerDivTexto{
-    width: 20%;
+    width: 30%;
     height: 70%;
     display: flex;
 }
@@ -112,7 +141,7 @@ Aqui é o grupo com a parte de baixo do footer*/
 }
 #footer2DT{
     margin-right: 10%;
-    width: 18%;
+    justify-content: flex-end;
 }
 /*Texto do footer*/
 .footerTexto{
@@ -120,7 +149,14 @@ Aqui é o grupo com a parte de baixo do footer*/
     color: white;
     display: flex;
     align-items: center;
+    font-size: 22px;
+    
 }
+/*removendo as linhas dos links*/
+footer a{
+    text-decoration: none;
+}
+
 /*Coração do code no footer*/
 #footerHeart{
     height: 70%;
