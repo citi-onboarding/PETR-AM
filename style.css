@@ -1,3 +1,79 @@
+:root{
+    margin: 0;
+    --footerCorBorda: #878787;
+    --footerCor: #1A3160;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    align-items: flex-start
+}
+/*Aqui estão as coisas do footer*/
 #footer{
+    height: 35vh;
+    width: 100%;
+    background-color: var(--footerCor);
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px 10px 0px 0px;
+
+}
+/*Aqui é o grupo com a parte de cima do footer*/
+#footerGrupoCima{
+    width: 80%;
+    height: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+/*Aqui é o grupo com a parte de baixo do footer*/
+#footerGrupoBaixo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Linha do footer que separa o GrupoCima do GrupoBaixo*/
+#footerLinha{
+    width: 100%;
+    height: 0;
+    margin: 0;
+    border: 1px 0px 0px 0px;
+    border-color: var(--footerCorBorda);
+    border-style: solid;
     
+}
+/*Div com o texto do footer*/
+.footerDivTexto{
+    width: 20%;
+    height: 70%;
+    display: flex;
+}
+/*Colocando as margens no grupo de baixo do footer*/
+#footer1DT{
+    margin-left: 10%;
+}
+#footer2DT{
+    margin-right: 10%;
+    width: 18%;
+}
+/*Texto do footer*/
+.footerTexto{
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+/*Coração do code no footer*/
+#footerHeart{
+    height: 70%;
+    width: auto;
+    margin-left: 2%;
+    align-self: center;
 }
