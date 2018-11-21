@@ -2,13 +2,14 @@
     margin: 0;
     --footerCorBorda: #878787;
     --footerCor: #1A3160;
+    --footerFont:  'Franklin Gothic', sans-serif;
 }
 body{
     height: 100vh;
     width: 100%;
     display: flex;
     margin: 0;
-    align-items: flex-start
+    align-items: flex-start; 
 }
 /*Aqui estão as coisas do footer*/
 #footer{
@@ -63,9 +64,10 @@ body{
 }
 .footerLinkImg img{
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0;
 }
+
 /*Div onde se encontra o logo da PETR-AM no footer*/
 #footerDivLogo{
     width: 30%;
@@ -150,7 +152,7 @@ body{
     display: flex;
     align-items: center;
     font-size: 22px;
-    
+    font-family: var(--footerFont);
 }
 /*removendo as linhas dos links*/
 footer a{
@@ -169,7 +171,16 @@ footer a{
 
 
 /*Responsividade*/
-@media(max-width:985px){
+@media(max-width: 1060px){
+    /*textos do div*/
+    .footerTexto{
+        font-size: 20px;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 12px;
+    }
+}
+@media(max-width: 985px){
     /*Texo do endereco*/
     #footerGrupoCima{
         margin-left: 5%;
@@ -184,7 +195,7 @@ footer a{
         margin-right: 5%; 
     }
 }
-@media(max-width:880px){
+@media(max-width: 880px){
     /*textos do footer*/
     .footerTexto{
         font-size: 18px;
@@ -193,36 +204,155 @@ footer a{
     #footerMapsDT .footerTexto{
         font-size: 12px;
     }
+    
 }
-@media(max-width:750px){
-    #footer{
-        height: 60vh;
+@media(max-width: 800px){
+    #footerMapsDT{
+        height: 25%;
     }
-    #footerGrupoCima{
+    /*Div Imagem do maps*/
+    #footerMap{
         height: 75%;
     }
+}
+@media(max-width: 750px){
+    /*O footer todo*/
+    #footer{
+        height: 75vh;
+    }
+    /*parte de cima do footer*/
+    #footerGrupoCima{
+        height: 75%;
+        flex-direction: column;
+    }
+    /*div com os icones*/
+    #footerConjunto{
+        width: 90%;
+        height: 20%;
+        order: 2;
+        flex-wrap: wrap;
+    }
+    /*classe com os icones e texto do footer*/
+    .footerIconText{
+        width: 50%;
+        height: 45%;
+    }
+    /*os dois ultimos icones*/
+    .footerIT{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    /*classe para fixar tamanho dos textos dos links*/
+    .footerLT{
+        width: 35%;
+    }
+    /*ajeitando as imagens dos icones footer*/
+    .footerIconText img{
+        width: 10%;
+        height: 60%;
+    }
+    .footerLinkImg{
+        width: 10%;
+        height: 60%;
+        margin-right: 5%;
+    }
+    .footerLinkImg img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    /*div com a logo*/
+    #footerDivLogo{
+        width: 100%;
+        order: 1;
+        height: 35%;
+        justify-content: center;
+    }
+    /*imagem da logo*/
+    #footerLogo{
+        height: auto;
+        width: 60%;
+    }
+    /*div com tudo do maps*/
+    #footerMaps{
+        width: 60%;
+        height: 53%;
+        margin-bottom: 2%;
+        order: 3;
+    }
+    #footerMapsDT{
+        height: 20%;
+    }
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 80%;
+    }
+    /*legenda do maps*/
+    #footerMapsDT .footerTexto{
+        font-size: 14px;
+    }
+    /*parte de baixo do footer*/
     #footerGrupoBaixo{
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 25%;
     }
+    /*div com texto da parte de baixo do footer*/
     .footerDivTexto{
         width: 80%;
         height: 30%;
         align-items: center;
         justify-content: center;
     }
+    /*copyright*/
     #footer1DT{
         margin: 2% 0 0 0;
-
     }
+    /*made with + <3*/
     #footer2DT{
         margin: 0;
         align-items: center;
         justify-content: center;
     }
+    /*texto geral do footer*/
     .footerTexto{
-        font-size: 22px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 565px){
+    #footerLogo{
+        height: auto;
+        width: 60%;
+    }
+    .footerLT{
+        width: 35%;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 13px;
+    }
+}
+@media(max-width: 440px){
+    /*tudo do map*/
+    #footerMaps{
+        width: 75%;
+    }
+    /*a logo do footer*/
+    #footerLogo{
+        height: auto;
+        width: 80%;
+    }
+    /*icones do footer*/
+    .footerLT{
+        width: 45%;
+    }
+}
+@media(max-width: 360px){
+    /*legenda do map*/
+    #footerMapsDT .footerTexto{
+        font-size: 12px;
+    }
+    .footerTexto{
+        font-size: 16px;
     }
 }
