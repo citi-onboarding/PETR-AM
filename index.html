@@ -5,8 +5,15 @@
     <title>PETR-AM Jr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
 </head>
 <body>
+    <!--Aqui é o banner-->
+    <div id="banner">
+
+    </div>
+
+
     <!--Footer-->
     <footer id="footer">
         <!--Esse é o grupo que ficam as coisas de cima do footer-->
@@ -74,5 +81,23 @@
         </div>
         
     </footer>
+
+
+    <!--JQuery-->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <!--Slick aqui-->
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#banner').slick({
+                autoplay: true,
+                autoplaySpeed: 5000
+        });
+        });
+    </script>
 </body>
 </html>
