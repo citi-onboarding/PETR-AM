@@ -91,13 +91,13 @@ body{
 /*Texto do Maps*/
 #footerMapsDT{
     width: 100%;
-    height: 20%;
+    height: 30%;
 }
 
 /*Div Imagem do maps*/
 #footerMap{
     width: 100%;
-    height: 80%;
+    height: 70%;
 }
 /*O mapa propriamente dito*/
 #footerMap iframe{
@@ -172,6 +172,15 @@ footer a{
 
 /*Responsividade*/
 @media(max-width: 1060px){
+    /*Texto do Maps*/
+    #footerMapsDT{
+        height: 25%;
+    }
+
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 75%;
+    }
     /*textos do div*/
     .footerTexto{
         font-size: 20px;
@@ -181,6 +190,14 @@ footer a{
     }
 }
 @media(max-width: 985px){
+    #footerMapsDT{
+        height: 20%;
+    }
+
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 80%;
+    }
     /*Texo do endereco*/
     #footerGrupoCima{
         margin-left: 5%;
@@ -195,6 +212,16 @@ footer a{
         margin-right: 5%; 
     }
 }
+@media(max-width: 965px){
+    #footerMapsDT{
+        height: 25%;
+    }
+
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 75%;
+    }
+}
 @media(max-width: 880px){
     /*textos do footer*/
     .footerTexto{
@@ -206,23 +233,22 @@ footer a{
     }
     
 }
-@media(max-width: 800px){
+@media(max-width: 750px){
     #footerMapsDT{
-        height: 25%;
+        height: 15%;
     }
+
     /*Div Imagem do maps*/
     #footerMap{
-        height: 75%;
+        height: 85%;
     }
-}
-@media(max-width: 750px){
     /*O footer todo*/
     #footer{
         height: 75vh;
     }
     /*parte de cima do footer*/
     #footerGrupoCima{
-        height: 75%;
+        height: 85%;
         flex-direction: column;
     }
     /*div com os icones*/
@@ -280,13 +306,6 @@ footer a{
         margin-bottom: 2%;
         order: 3;
     }
-    #footerMapsDT{
-        height: 20%;
-    }
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 80%;
-    }
     /*legenda do maps*/
     #footerMapsDT .footerTexto{
         font-size: 14px;
@@ -296,7 +315,7 @@ footer a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 25%;
+        height: 15%;
     }
     /*div com texto da parte de baixo do footer*/
     .footerDivTexto{
@@ -329,10 +348,28 @@ footer a{
         width: 35%;
     }
     #footerMapsDT .footerTexto{
-        font-size: 13px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 482px){
+    #footerMapsDT{
+        height: 20%;
+    }
+
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 80%;
     }
 }
 @media(max-width: 440px){
+    #footerMapsDT{
+        height: 15%;
+    }
+
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 85%;
+    }
     /*tudo do map*/
     #footerMaps{
         width: 75%;
@@ -347,12 +384,39 @@ footer a{
         width: 45%;
     }
 }
-@media(max-width: 360px){
+@media(max-width: 386px){
+    #footerMapsDT{
+        height: 20%;
+    }
+
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 80%;
+    }
+}
+@media(max-width: 365px){
     /*legenda do map*/
     #footerMapsDT .footerTexto{
         font-size: 12px;
     }
+    /*textos do footer*/
     .footerTexto{
         font-size: 16px;
+    }
+}
+@media(max-width: 322px){
+    /*textos do footer*/
+    .footerTexto{
+        font-size: 14px;
+    }
+}
+@media(max-width: 290px){
+    /*textos do footer*/
+    .footerTexto{
+        font-size: 12px;
+    }
+    /*legenda do mapa*/
+    #footerMapsDT .footerTexto{
+        font-size: 10px;
     }
 }
