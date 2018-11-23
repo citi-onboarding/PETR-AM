@@ -342,6 +342,11 @@ footer a{
     
 }
 @media(max-width: 750px){
+    /*banner*/
+    #bannerS1{
+        background-image: url("imagens/banner/Trabalhadores\ 1.jpg");
+    }
+    /*footer*/
     #footerMapsDT{
         height: 15%;
     }
