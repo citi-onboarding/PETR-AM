@@ -8,9 +8,106 @@ body{
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     align-items: flex-start; 
 }
+
+/*Aqui estão as coisas do banner*/
+#banner{
+    width: 100%;
+    height: 100vh;
+}
+#bannerGroup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+/*Lista de screens*/
+div.slick-list.draggable{
+    width: 100%;
+    height: 100%;
+}
+/*slick passante*/
+.slick-track{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/*uma tela do banner*/
+.bannerScreen{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*as imagens do banner*/
+#bannerS1{
+    background-image: url("imagens/banner/trabalhadores\ 1\ web.jpg");
+}
+#bannerS2{
+    background-image: url("imagens/banner/Trabalhadores\ 2.jpg");
+}
+/*os botões de arrow do banner*/
+#bannerPrev{
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    left: 0;
+    width: 15%;
+    height: 15%;
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+#bannerPrev:focus{
+    border: none;
+}
+#bannerNext{
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    right: 0;
+    width: 15%;
+    height: 15%;
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+#bannerNext:focus{
+    border: none;
+}
+/*setas do banner*/
+#bannerSetaL{
+    -webkit-clip-path: polygon(39% 1%, 10% 50%, 10% 50%, 10% 50%, 10% 50%, 40% 100%, 0% 50%);
+    clip-path: polygon(39% 1%, 10% 50%, 10% 50%, 10% 50%, 10% 50%, 40% 100%, 0% 50%);
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    left: 0;
+}
+#bannerSetaR{
+    -webkit-clip-path: polygon(39% 1%, 10% 50%, 10% 50%, 10% 50%, 10% 50%, 40% 100%, 0% 50%);
+    clip-path: polygon(39% 1%, 10% 50%, 10% 50%, 10% 50%, 10% 50%, 40% 100%, 0% 50%);
+    transform: rotate(180deg);
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    right: 0;
+}
+.bannerDots{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 /*Aqui estão as coisas do footer*/
 #footer{
     height: 35vh;
@@ -171,6 +268,17 @@ footer a{
 
 
 /*Responsividade*/
+@media(min-width: 1265px){
+    /*Texto do Maps*/
+    #footerMapsDT{
+        height: 20%;
+    }
+
+    /*Div Imagem do maps*/
+    #footerMap{
+        height: 80%;
+    }
+}
 @media(max-width: 1060px){
     /*Texto do Maps*/
     #footerMapsDT{
