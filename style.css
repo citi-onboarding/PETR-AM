@@ -3,6 +3,7 @@
     --footerCorBorda: #878787;
     --footerCor: #1A3160;
     --footerFont:  'Franklin Gothic', sans-serif;
+    --navColor: #354B77;
 }
 body{
     height: 100vh;
@@ -12,6 +13,50 @@ body{
     align-items: flex-start;
     flex-wrap: wrap;
 }
+/*Aqui estão as coisas da navBar*/
+#navBar{
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--navColor);
+    opacity: 0.93%;
+}
+#navBarConjunto div{
+    margin: 0;
+}
+/*Conjunto com as coisas da navbar*/
+#navBarConjunto{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+/*pequenos grupos da navBar(um para cada link)*/
+.navDiv{
+    font-size: 14px;
+    color: white;
+    width: 15%;
+    height: 100%;
+}
+.navDiv a{
+
+}
+/**/
+#navDivLogo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#navBarLogo{
+    width: 60%;
+    height: 100%;
+}
+
+
+
 /*Aqui estão as coisas do footer*/
 #footer{
     height: 35vh;
