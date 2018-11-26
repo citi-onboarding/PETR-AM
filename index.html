@@ -45,6 +45,29 @@
         </div>
     </div>
     
+    <!--Aqui é o carrossel de serviços-->
+    <div id="servicos">
+        <!--Div que receber o slick-->
+        <div id="servicosGroup">
+            <!--Screen1-->
+            <div class="servicosScreen">
+
+            </div>
+            <!--Screen2-->
+            <div class="servicosScreen">
+
+            </div>
+            <!--Screen3-->
+            <div class="servicosScreen">
+
+            </div>
+            <!--Screen4-->
+            <div class="servicosScreen">
+
+            </div>
+        </div>
+    </div>
+    
     <!--Footer-->
     <footer id="footer">
         <!--Esse é o grupo que ficam as coisas de cima do footer-->
@@ -120,7 +143,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
-    <!--Slick aqui-->
+    <!--Slick banner aqui-->
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -130,6 +153,18 @@
                 nextArrow: '<button type="button" id="bannerNext"><div id="bannerSetaR"></div></button>',
                 prevArrow: '<button type="button" id="bannerPrev"><div id="bannerSetaL"></div></button>',
                 infinite: true
+        });
+        });
+    </script>
+    <!--Slick Servicos aqui-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#servicosGroup').slick({
+                nextArrow: '<button type="button" id="servicosNext"><img id="servicosSetaR" src="imagens/servicos/sNext.svg"></button>',
+                prevArrow: '<button type="button" id="servicosPrev"><img id="servicosSetaL" src="imagens/servicos/sPrev.svg"></button>',
+                infinite: true,
+                slidesToShow: 3,
+                centerMode: true
         });
         });
     </script>

@@ -4,6 +4,7 @@
     --footerCor: #1A3160;
     --fontGeral:  'Franklin Gothic', sans-serif;
     --navColor: rgba(53,75,119,0.93);
+    --corGeral: #354B77;
 }
 body{
     height: 100vh;
@@ -166,6 +167,66 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+/*Aqui estão as coisas dos serviços*/
+#servicos{
+    height: 90vh;
+    width: 100%;
+    background-color: var(--corGeral);
+}
+#servicosGroup{
+    width: 80%;
+    height: 100%;
+    margin: 0 10% 0 10%;
+    position: relative;
+    display: flex;
+}
+#servicosPrev{
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    left: 0;
+    width: 15%;
+    height: 15%;
+    border: none;
+    background-color: var(--corGeral);
+}
+#servicosNext{
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    right: 0;
+    width: 15%;
+    height: 15%;
+    border: none;
+    background-color: var(--corGeral);
+}
+#servicosPrev:focus{
+    outline: none;
+    border: none;
+}
+#servicosNext:focus{
+    outline: none;
+    border: none;
+}
+#servicosSetaL{
+    width: 100%;
+    height: 100%;
+}
+#servicosSetaR{
+    width: 100%;
+    height: 100%;
+}
+#servicos div.slick-list.draggable{
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+}
+#banner .slick-track{
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 /*Aqui estão as coisas do footer*/
