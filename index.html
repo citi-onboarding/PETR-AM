@@ -47,23 +47,46 @@
     
     <!--Aqui é o carrossel de serviços-->
     <div id="servicos">
+        <div id="servicosDivTitulo">
+            <h2 id="servicosTitulo">nossos serviços</h2>
+        </div>
         <!--Div que receber o slick-->
         <div id="servicosGroup">
             <!--Screen1-->
             <div class="servicosScreen">
-
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo servicosTexto">Serviço 1</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
             </div>
             <!--Screen2-->
             <div class="servicosScreen">
-
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo servicosTexto">Serviço 2</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
             </div>
             <!--Screen3-->
             <div class="servicosScreen">
-
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo servicosTexto">Serviço 3</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
             </div>
             <!--Screen4-->
             <div class="servicosScreen">
-
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo servicosTexto">Serviço 4</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
             </div>
         </div>
     </div>
@@ -129,7 +152,7 @@
             </div>
             <!--Made with-->
             <div class="footerDivTexto" id="footer2DT">
-                <p class="footerTexto">Made with &lt / &gt and </p>
+                <p class="footerTexto">Made with &lt/&gt and </p>
                 <img src="imagens/footer/heart.svg" id="footerHeart">
             </div>
         </div>
@@ -148,8 +171,6 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('#bannerGroup').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
                 nextArrow: '<button type="button" id="bannerNext"><div id="bannerSetaR"></div></button>',
                 prevArrow: '<button type="button" id="bannerPrev"><div id="bannerSetaL"></div></button>',
                 infinite: true
@@ -164,6 +185,7 @@
                 prevArrow: '<button type="button" id="servicosPrev"><img id="servicosSetaL" src="imagens/servicos/sPrev.svg"></button>',
                 infinite: true,
                 slidesToShow: 3,
+                slidesToScroll: 1,
                 centerMode: true
         });
         });

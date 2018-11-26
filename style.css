@@ -6,6 +6,11 @@
     --navColor: rgba(53,75,119,0.93);
     --corGeral: #354B77;
 }
+/*serve para incluir fontes que não são padrão*/
+@font-face{
+    font-family: BaronNeue;
+    src: url(fonts/Baron\ Neue/Baron\ Neue.otf);
+}
 body{
     height: 100vh;
     width: 100%;
@@ -175,13 +180,37 @@ body{
     width: 100%;
     background-color: var(--corGeral);
 }
+/*div com título dos servicos*/
+#servicosDivTitulo{
+    width: 80%;
+    margin: 0% 10% 2% 10%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+/*Titulo dos servicos*/
+#servicosTitulo{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    font-family: BaronNeue, sans-serif;
+    font-weight: normal; 
+    color: white;
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+/*Grupo com as coisas que vai ter nos servicos*/
 #servicosGroup{
     width: 80%;
-    height: 100%;
+    height: 68%;
     margin: 0 10% 0 10%;
     position: relative;
     display: flex;
+    justify-content: center;
 }
+/*botao da arrow prev*/
 #servicosPrev{
     position: absolute;
     z-index: 1;
@@ -191,7 +220,10 @@ body{
     height: 15%;
     border: none;
     background-color: var(--corGeral);
+    display: flex;
+    align-items: center;
 }
+/*botao da arrow next*/
 #servicosNext{
     position: absolute;
     z-index: 1;
@@ -201,7 +233,10 @@ body{
     height: 15%;
     border: none;
     background-color: var(--corGeral);
+    display: flex;
+    align-items: center
 }
+/*ao clicar nas setinhas para n aparecer nada circulando*/
 #servicosPrev:focus{
     outline: none;
     border: none;
@@ -210,23 +245,64 @@ body{
     outline: none;
     border: none;
 }
+/*as imagens de arrow dos servicos*/
 #servicosSetaL{
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
 }
 #servicosSetaR{
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
 }
+/*parte do slick com as imagens*/
 #servicos div.slick-list.draggable{
-    width: 100%;
+    width: 70%;
     height: 100%;
     padding: 0 !important;
 }
-#banner .slick-track{
+/*aqueles sendo mostrados agora*/
+#servicos .slick-track{
     width: 100%;
     height: 100%;
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+/*classe das screen do slick nos servicos*/
+.servicosScreen{
+    width: 25%;
+    height: 80%!important;
+    background-color: white;
+    margin: 0 10px 0 10px;
+}
+/*div com os títulos dos serviços nas screens*/
+.servicosScreenDivTitulo{
+    width: 100%;
+    height: 10%;    
+}
+/*titulo dos serviços nas screens*/
+.servicosScreenTitulo{
+    font-family: BaronNeue, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*classe das div das imagens nas screens dos serviços*/
+.serviçosScreenDivImg{
+    /*clippy para fazer o círculo*/
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    width: 60%;
+    height: 25%;
+}
+.serviçosScreenImg{
+    height: 100%;
+    width: auto;
 }
 
 /*Aqui estão as coisas do footer*/
