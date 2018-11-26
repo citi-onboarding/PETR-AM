@@ -43,13 +43,6 @@ div.slick-list.draggable{
     background-size: cover;
     background-position: center;
 }
-/*as imagens do banner*/
-#bannerS1{
-    background-image: url("imagens/banner/trabalhadores\ 1\ web.jpg");
-}
-#bannerS2{
-    background-image: url("imagens/banner/Trabalhadores\ 2.jpg");
-}
 /*os botões de arrow do banner*/
 #bannerPrev{
     position: absolute;
@@ -63,6 +56,7 @@ div.slick-list.draggable{
 }
 #bannerPrev:focus{
     border: none;
+    outline: none;
 }
 #bannerNext{
     position: absolute;
@@ -76,6 +70,7 @@ div.slick-list.draggable{
 }
 #bannerNext:focus{
     border: none;
+    outline: none;
 }
 /*setas do banner*/
 #bannerSetaL{
