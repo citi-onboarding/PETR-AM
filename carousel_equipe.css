@@ -1,21 +1,37 @@
+@font-face{
+  font-family: BaronNeue;
+  src: url(fonts/Baron\ Neue/Baron\ Neue.otf);
+}
+
+/* STYLE BODY */
 body {
   margin: 0;
   color: white;
-  font-family: 'Franklin Gothic', sans-serif;
+  font-family: 'BaronNeue';
+  width: 100%;
+  height: 100%;
+  background-color: #354B77;
 }
 
+/* STYLE DIV GERAL */
 .equipe {
   background-color: #354B77;
   width: 100%;
   height: 100%;
 }
 
-#conhecaNossaHistoria {
+/* STYLE TITULO */
+#conhecaNossaEquipe {
+  opacity : 1;
+  margin-top: 3%;
+  transition : opacity 2s;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+/* STYLE ICON TITULO */
 #greenMark {
   background-color: #47C647;
   width: 5px;
@@ -29,28 +45,29 @@ body {
   font-size: 45px;
 }
 
+/* STYLE CARROSSEL */
 .carousel {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
+  justify-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
+/* STYLE DIV DE CADA PESSOA */
 .pessoa {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
-  width: 25%;
-  height: 80%;
+  width: 400px !important;
+  height: 80% !important;
   align-items: center;
   justify-items: center !important;
   text-align: center;
+  margin: 0;
 }
 
-#descriçao p {
-  text-align: center;
-  align-items: center;
-}
 
+/* STYLE IMAGEM */
 .photo img {
   display: flex;
   flex-direction: column;
@@ -59,21 +76,25 @@ body {
   border-radius: 60%;
 }
 
+/* SYLE IMAGEM */
 .photo {
   display: flex;
   justify-content: center;
 }
 
-.name p {
+/* STYLE NOME + FUNÇÃO */
+.name P {
   margin-bottom: 0;
   padding: 0;
   text-align: center;
 }
 
+/* STYLE NOME */
 .nome {
   font-size: 35px;
 }
 
+/* STYLE FUNÇÃO */
 .função {
   margin-top: 0;
   margin-bottom: 0;
@@ -81,15 +102,36 @@ body {
   font-size: 25px;
 }
 
+/* STYLE DESCRIÇÃO DA FUNÇÃO */
 .function {
   justify-content: center;
   width: 50%;
-  font-size: 18px;
-  /* background-color: #47C647; */
+  /* font-size: 18px; */
   text-align: center;
 }
 
+#descricao p {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 750px) {
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
   #titulo {
     margin-left: 10px;
     margin-top: 0;
@@ -132,15 +174,13 @@ body {
 } */
 
 .slick-prev {
-  margin-left: 40px;
-  left: 20px;
+  margin-left: 7%;
   z-index: 1000;
   margin-bottom: 50px !important;
 }
 
 .slick-next {
-  right: 100px;
-  margin-right: 40px;
+  margin-right: 7%;
   z-index: 1000;
   margin-bottom: 50px !important;
 }

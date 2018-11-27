@@ -9,11 +9,12 @@ $(document).ready(function(){
             {
               breakpoint: 750,
               settings: {
+                centerMode: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
-                arrows: true
+                arrows: true,
               }
             }
         ]
