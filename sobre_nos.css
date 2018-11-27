@@ -1,0 +1,220 @@
+/* STYLE BODY */
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Franklin Gothic', sans-serif;
+    height: 100%;
+    background-color: #354B77;
+}
+
+/* STYLE DIV GERAL */
+#sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* STYLE PARTE SUPERIOR */
+#upperPart {
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* STYLE DO TITULO + TEXTO */
+#text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40%;
+}
+
+/* STYLE TITULO EM GERAL */
+#title {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+/* STYLE ICON DO TITULO */
+#greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 35px;
+    margin-top: 8px;
+    z-index: 1000;
+}
+
+/* STYLE DO TITULO */
+#nossaHistoria {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 45px;
+}
+
+/* STYLE DO TEXTO */
+#historia {
+    width: 70%;
+    height: 40%;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* STYLE DA FOTO */
+#photo img {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    border-radius: 100%;
+    margin-left: 30%;
+}
+
+/* STYLE DA FOTO */
+#photo {
+    display: flex;
+    text-justify: right;
+    width: 50%;
+}
+
+/* STYLE MVV */
+#MVV {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 5px solid #47C647;
+}
+
+/* STYLES COMUNS AOS TRÊS TÓPICOS */
+/* TÓPICO */
+.topic {
+    font-size: 22px;
+}
+
+/* ICONE */
+.icon img {
+    width: 30%;
+    height: 30%;
+}
+
+/* DESCRIÇÃO */
+.mensagem {
+    text-align: center;
+}
+
+/* STYLE DE CADA UM */
+#missao {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#visao {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#valores {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* RESPOSIVIDADE (MOBILE) */
+@media only screen and (max-width: 750px) {
+    #sobreNos {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #photo img {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 90%;
+        border-radius: 100%;
+        margin-left: 30%;
+    }
+    
+    #nossaHistoria {
+        margin-left: 10px;
+        margin-top: 0;
+        font-size: 25px;
+    }
+  
+    #upperPart {
+        width: 80%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    #historia {
+        width: 70%;
+        height: 40%;
+        text-align: left;
+        font-size: 15px;
+    }
+  
+    .photo img {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 15%;
+        border-radius: 60%;
+    }
+
+    #MVV {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        border: 5px solid #47C647;
+    }
+
+    .topic {
+        font-size: 17px;
+    }
+
+    #missao {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #visao {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #valores {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+  }
