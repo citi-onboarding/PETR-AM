@@ -23,7 +23,7 @@
                     <a href="">Equipe</a>
                 </div>
                 <div class="navDiv">
-                    <a href="">Serviços</a>
+                    <a href="#servicos">Serviços</a>
                 </div>
                 <div class="navDiv">
                     <a href="">Contato</a>
@@ -41,6 +41,83 @@
             <div class="bannerScreen" style='background-image: url("imagens/banner/trabalhadores\ 1\ web.jpg");'>
             </div>
             <div class="bannerScreen" style='background-image: url("imagens/banner/Trabalhadores\ 2.jpg");'>
+            </div>
+        </div>
+    </div>
+    
+    <!--Aqui é o carrossel de serviços-->
+    <div id="servicos">
+        <div id="servicosDivTitulo">
+            <h2 id="servicosTitulo">
+                <div class="servicosBarrinha"></div>
+                nossos serviços
+            </h2>
+        </div>
+        <!--Div que receber o slick-->
+        <div id="servicosGroup">
+            <!--Screen1-->
+            <div class="servicosScreen">
+                <div class="servicosScreenCinza"></div>
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo">Serviço 1</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
+                <div class="serviçosScreenDivTexto">
+                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
+                </div>
+                <div class="servicosScreenDivBtn">
+                    <button class="servicosScreenBtn">Contratar</button>
+                </div>
+            </div>
+            <!--Screen2-->
+            <div class="servicosScreen">
+                <div class="servicosScreenCinza"></div>
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo servicosTexto">Serviço 2</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
+                <div class="serviçosScreenDivTexto">
+                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
+                </div>
+                <div class="servicosScreenDivBtn">
+                    <button class="servicosScreenBtn">Contratar</button>
+                </div>
+            </div>
+            <!--Screen3-->
+            <div class="servicosScreen">
+                <div class="servicosScreenCinza"></div>
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo servicosTexto">Serviço 3</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
+                <div class="serviçosScreenDivTexto">
+                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
+                </div>
+                <div class="servicosScreenDivBtn">
+                    <button class="servicosScreenBtn">Contratar</button>
+                </div>
+            </div>
+            <!--Screen4-->
+            <div class="servicosScreen">
+                <div class="servicosScreenCinza"></div>
+                <div class="servicosScreenDivTitulo">
+                    <p class="servicosScreenTitulo servicosTexto">Serviço 4</p>
+                </div>
+                <div class="serviçosScreenDivImg">
+                    <img class="serviçosScreenImg" src="imagens/servicos/servicosImgTeste.jpg">
+                </div>
+                <div class="serviçosScreenDivTexto">
+                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
+                </div>
+                <div class="servicosScreenDivBtn">
+                    <button class="servicosScreenBtn">Contratar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -106,7 +183,7 @@
             </div>
             <!--Made with-->
             <div class="footerDivTexto" id="footer2DT">
-                <p class="footerTexto">Made with &lt / &gt and </p>
+                <p class="footerTexto">Made with &lt/&gt and </p>
                 <img src="imagens/footer/heart.svg" id="footerHeart">
             </div>
         </div>
@@ -120,18 +197,13 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
-    <!--Slick aqui-->
+    <!--Slick banner aqui-->
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#bannerGroup').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                nextArrow: '<button type="button" id="bannerNext"><div id="bannerSetaR"></div></button>',
-                prevArrow: '<button type="button" id="bannerPrev"><div id="bannerSetaL"></div></button>',
-                infinite: true
-        });
-        });
+    <script type="text/javascript" src="scripts/banner.js">
+        
     </script>
+    <!--Slick Servicos aqui-->
+    <script type="text/javascript" src="scripts/serviços.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
