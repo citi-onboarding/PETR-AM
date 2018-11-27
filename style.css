@@ -362,7 +362,12 @@ body{
     margin: 0;
     text-align: center;
     overflow-y: scroll;
+    -ms-overflow-style: none;
     height: 100%;
+}
+/*ajeitando a scrollbar*/
+.servicosScreenTexto::-webkit-scrollbar {
+    display: none;
 }
 /*Div com botão nas screens de serviço*/
 .servicosScreenDivBtn{
