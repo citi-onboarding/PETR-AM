@@ -115,6 +115,10 @@ body{
     background-size: cover;
     background-position: center;
 }
+.bannerScreen:focus{
+    outline: none;
+    border: none;
+}
 /*os botões de arrow do banner*/
 #bannerPrev{
     position: absolute;
@@ -193,6 +197,7 @@ body{
     display: flex;
     align-items: center;
 }
+/*barrinha verde do título dos serviços*/
 .servicosBarrinha{
     width: 4px;
     height: 30px;
@@ -215,7 +220,7 @@ body{
 /*Grupo com as coisas que vai ter nos servicos*/
 #servicosGroup{
     width: 80%;
-    height: 68%;
+    height: 78%;
     margin: 0 10% 0 10%;
     position: relative;
     display: flex;
@@ -230,7 +235,7 @@ body{
     width: 7.5%;
     height: 15%;
     border: none;
-    background-color: var(--corGeral);
+    background-color: rgba(0,0,0,0);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -245,7 +250,7 @@ body{
     width: 7.5%;
     height: 15%;
     border: none;
-    background-color: var(--corGeral);
+    background-color: rgba(0,0,0,0);
     display: flex;
 }
 /*ao clicar nas setinhas para n aparecer nada circulando*/
@@ -267,7 +272,7 @@ body{
     height: 75%;
 }
 /*parte do slick com as imagens*/
-#servicos div.slick-list.draggable{
+#servicos div.slick-list{
     width: 85%;
     height: 100%;
     padding: 0 !important;
@@ -290,6 +295,10 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+}
+.servicosScreen:focus{
+    outline: none;
+    border: none;
 }
 /*fade nas telas adjacentes*/
 .servicosScreenCinza{
@@ -352,6 +361,8 @@ body{
     font-size: 16px;
     margin: 0;
     text-align: center;
+    overflow-y: scroll;
+    height: 100%;
 }
 /*Div com botão nas screens de serviço*/
 .servicosScreenDivBtn{
@@ -515,6 +526,7 @@ body{
     align-items: center;
     font-size: 22px;
     font-family: var(--fontGeral);
+    overflow-y: scroll;
 }
 /*removendo as linhas dos links*/
 footer a{
@@ -574,6 +586,12 @@ footer a{
         width: 90%;
         margin-right: 5%;
         margin-left: 5%;
+    }
+    /*div com o título dos serviços*/
+    #servicosDivTitulo{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     /*divs dos links da nav*/
     .navDiv{
@@ -637,11 +655,6 @@ footer a{
     }
 }
 @media(max-width: 750px){
-    /*Serviços*/
-    .servicosScreen{
-        width: 100%;
-    }
-
     /*banner*/
     #bannerS1{
         background-image: url("imagens/banner/Trabalhadores\ 1.jpg");
@@ -753,6 +766,28 @@ footer a{
         font-size: 18px;
     }
 }
+@media(max-width: 749px){
+    /*Serviços*/
+    #servicos div.slick-list{
+        width: 60%;
+        padding-right: 20% !important;
+        padding-left: 20% !important;
+    }
+    .servicosScreen{
+        width: 80%;
+    }
+    .servicosScreenTexto{
+        font-size: 16px;
+    }
+    #servicosNext{
+        width: 15%;
+        height: 25%;
+    }
+    #servicosPrev{
+        width: 15%;
+        height: 25%;
+    }
+}
 @media(max-width: 565px){
     #footerLogo{
         height: auto;
@@ -773,6 +808,10 @@ footer a{
     }
 }
 @media(max-width: 440px){
+    #servicosTitulo{
+        font-size: 36px;
+    }
+
     #footerMapsDT{
         height: 15%;
     }
@@ -799,6 +838,11 @@ footer a{
     }
 }
 @media(max-width: 386px){
+    /*Titulo dos serviços*/
+    #servicosTitulo{
+        font-size: 32px;
+    }
+
     #footerMapsDT{
         height: 20%;
     }
@@ -818,6 +862,11 @@ footer a{
     }
     /*textos do footer*/
     
+}
+@media(max-width: 331px){
+    #servicosTitulo{
+        font-size: 28px;
+    }
 }
 @media(max-width: 322px){
     /*textos do footer*/
@@ -848,8 +897,67 @@ footer a{
         font-size: 14px;
     }
 }
+@media(max-width: 813px) and (min-width: 812px) and (max-height: 376px) and (min-height: 375px){
+    .footerTexto{
+        font-size: 16px;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 10px;
+    }
+}
+/*iphone 6/7/8 plus*/
+@media(max-width: 737px) and (min-width: 736px) and (max-height: 415px) and (min-height: 414px){
+    .serviçosScreenDivImg{
+        margin-bottom: 0%; 
+    }
+    #footerLogo{
+        width: 40%;
+    }
+    .footerTexto{
+        font-size: 14px;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 10px;
+    }
+}
+/*iphone 6/7/8*/
+@media(max-width: 668px) and (min-width: 667px) and (max-height: 376px) and (min-height: 375px){
+    .serviçosScreenDivImg{
+        margin-bottom: 0%; 
+    }
+    #footerLogo{
+        width: 40%;
+    }
+    .footerTexto{
+        font-size: 14px;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 8px;
+    }
+}
+/*iphone 5/se*/
+@media(max-width: 569px) and (min-width: 568px) and (max-height: 321px) and (min-height: 320px){
+    .serviçosScreenDivImg{
+        margin-bottom: 0%; 
+    }
+    #footerLogo{
+        width: 40%;
+    }
+    .footerTexto{
+        font-size: 14px;
+    }
+    #footerMaps{
+        width: 75%;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 9px;
+    }
+}
 /*iPad*/
 @media(max-width: 769px) and (min-width: 768px) and (max-height: 1025px) and (min-height: 1024px){
+    .servicosScreenTexto{
+        font-size: 18px;
+    }
     .footerTexto{
         font-size: 18px;
     }
@@ -857,8 +965,47 @@ footer a{
         font-size: 14px;
     }
 }
+/*Pixel 2*/
+@media(max-width: 732px) and (min-width: 731px) and (max-height: 412px) and (min-height: 411px){
+    .serviçosScreenDivImg{
+        margin-bottom: 0%; 
+    }
+    #footerLogo{
+        width: 40%;
+    }
+    .footerTexto{
+        font-size: 14px;
+    }
+    #footerMaps{
+        width: 75%;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 9px;
+    }
+}
+/*Galaxy S5*/
+@media(max-width: 641px) and (min-width: 640px) and (max-height: 361px) and (min-height: 360px){
+    .serviçosScreenDivImg{
+        margin-bottom: 0%; 
+    }
+    #footerLogo{
+        width: 40%;
+    }
+    .footerTexto{
+        font-size: 14px;
+    }
+    #footerMaps{
+        width: 75%;
+    }
+    #footerMapsDT .footerTexto{
+        font-size: 10px;
+    }
+}
 /*iPad Pro*/
 @media(max-width: 1025px) and (min-width: 1024px) and (max-height: 1367px) and (min-height: 1366px){
+    .servicosScreenTexto{
+        font-size: 22px;
+    }
     #footerMapsDT{
         height: 15%;
     }
