@@ -637,6 +637,11 @@ footer a{
     }
 }
 @media(max-width: 750px){
+    /*Serviços*/
+    .servicosScreen{
+        width: 100%;
+    }
+
     /*banner*/
     #bannerS1{
         background-image: url("imagens/banner/Trabalhadores\ 1.jpg");
