@@ -179,25 +179,36 @@ body{
     height: 90vh;
     width: 100%;
     background-color: var(--corGeral);
+    /*CSS matic para sombra*/
+    -webkit-box-shadow: 0px 8px 25px 3px var(--corGeral);
+    -moz-box-shadow: 0px 8px 25px 3px var(--corGeral);
+    box-shadow: 0px 8px 25px 3px var(--corGeral);
+    z-index: 2;
 }
 /*div com título dos servicos*/
 #servicosDivTitulo{
     width: 80%;
-    margin: 0% 10% 2% 10%;
+    margin: 2% 10% 2% 10%;
     height: 10%;
     display: flex;
     align-items: center;
+}
+.servicosBarrinha{
+    width: 4px;
+    height: 30px;
+    margin-right: 8px;
+    background-color:#47C647;
 }
 /*Titulo dos servicos*/
 #servicosTitulo{
     height: 100%;
     width: 100%;
     justify-content: center;
-    font-size: 30px;
+    font-size: 42px;
     font-family: BaronNeue, sans-serif;
     font-weight: normal; 
     color: white;
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     margin: 0;
 }
@@ -216,26 +227,26 @@ body{
     z-index: 1;
     align-self: center;
     left: 0;
-    width: 15%;
+    width: 7.5%;
     height: 15%;
     border: none;
     background-color: var(--corGeral);
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 /*botao da arrow next*/
 #servicosNext{
     position: absolute;
     z-index: 1;
     align-self: center;
+    justify-self: flex-end;
     right: 0;
-    width: 15%;
+    width: 7.5%;
     height: 15%;
     border: none;
     background-color: var(--corGeral);
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
 /*ao clicar nas setinhas para n aparecer nada circulando*/
 #servicosPrev:focus{
@@ -248,16 +259,16 @@ body{
 }
 /*as imagens de arrow dos servicos*/
 #servicosSetaL{
-    width: 75%;
+    width: 100%;
     height: 75%;
 }
 #servicosSetaR{
-    width: 75%;
+    width: 100%;
     height: 75%;
 }
 /*parte do slick com as imagens*/
 #servicos div.slick-list.draggable{
-    width: 70%;
+    width: 85%;
     height: 100%;
     padding: 0 !important;
 }
@@ -278,12 +289,26 @@ body{
     display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+}
+/*fade nas telas adjacentes*/
+.servicosScreenCinza{
+    background-color: rgba(164,163,163,0.62);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.slick-center .servicosScreenCinza{
+    display: none;
 }
 /*div com os títulos dos serviços nas screens*/
 .servicosScreenDivTitulo{
     width: 100%;
-    height: 10%;    
+    height: 10%;   
 }
+/*barrinha verde nos serviços*/
+
 /*titulo dos serviços nas screens*/
 .servicosScreenTitulo{
     font-family: BaronNeue, sans-serif;
@@ -326,7 +351,9 @@ body{
     font-family: var(--fontGeral);
     font-size: 16px;
     margin: 0;
+    text-align: center;
 }
+/*Div com botão nas screens de serviço*/
 .servicosScreenDivBtn{
     width: 100%;
     height: 15%;
@@ -334,6 +361,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+/*Botão nas screens de serviço*/
+.servicosScreenBtn{
+    height: 70%;
+    width: 40%;
+    background-color: #47C647;
+    border: none;
+    color: white;
+    font-family: var(--fontGeral);
+}
+
 
 
 /*Aqui estão as coisas do footer*/
@@ -507,6 +544,12 @@ footer a{
         height: 80%;
     }
 }
+@media(max-width: 1108px){
+    /*texto das screens de serviço*/
+    .servicosScreenTexto{
+        font-size: 14px;
+    }
+}
 @media(max-width: 1060px){
     /*Texto do Maps*/
     #footerMapsDT{
@@ -526,6 +569,12 @@ footer a{
     }
 }
 @media(max-width: 986px){
+    /*conjunto com o slick de serviços*/
+    #servicosGroup{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
     /*divs dos links da nav*/
     .navDiv{
         width: 12%;
@@ -580,6 +629,12 @@ footer a{
         font-size: 12px;
     }
     
+}
+@media(max-width: 781px){
+    /*texto das screens de serviço*/
+    .servicosScreenTexto{
+        font-size: 12px;
+    }
 }
 @media(max-width: 750px){
     /*banner*/
