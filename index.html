@@ -199,46 +199,11 @@
     </script>
     <!--Slick banner aqui-->
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#bannerGroup').slick({
-                nextArrow: '<button type="button" id="bannerNext"><div id="bannerSetaR"></div></button>',
-                prevArrow: '<button type="button" id="bannerPrev"><div id="bannerSetaL"></div></button>',
-                infinite: true,
-                autoplay: true,
-                autoplaySpeed: 3000
-        });
-        });
+    <script type="text/javascript" src="scripts/banner.js">
+        
     </script>
     <!--Slick Servicos aqui-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#servicosGroup').slick({
-                nextArrow: '<button type="button" id="servicosNext"><img id="servicosSetaR" src="imagens/servicos/sNext.svg"></button>',
-                prevArrow: '<button type="button" id="servicosPrev"><img id="servicosSetaL" src="imagens/servicos/sPrev.svg"></button>',
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                draggable: false,
-                responsive: [
-                    {
-                        breakpoint: 751,
-                        settings:{
-                            slidesToShow: 1,
-                            nextArrow: '<button type="button" id="servicosNext"><img id="servicosSetaR" src="imagens/servicos/sNext.svg"></button>',
-                            prevArrow: '<button type="button" id="servicosPrev"><img id="servicosSetaL" src="imagens/servicos/sPrev.svg"></button>',
-                            infinite: true,
-                            slidesToScroll: 1,
-                            centerMode: true,
-                            draggable: false,
-                            centerPadding: '20px'
-                        }
-                    }
-                ]
-        });
-        });
-    </script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="scripts/serviços.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>

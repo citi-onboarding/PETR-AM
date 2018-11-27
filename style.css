@@ -526,7 +526,6 @@ body{
     align-items: center;
     font-size: 22px;
     font-family: var(--fontGeral);
-    overflow-y: scroll;
 }
 /*removendo as linhas dos links*/
 footer a{
