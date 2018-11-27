@@ -82,7 +82,7 @@ body{
 #navBarLogo{
     width: auto;
     max-width: 100%;
-    height: 100%;
+    height: 70%;
 }
 
 /*Aqui estão as coisas do banner*/
@@ -234,7 +234,8 @@ body{
     border: none;
     background-color: var(--corGeral);
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: flex-end;
 }
 /*ao clicar nas setinhas para n aparecer nada circulando*/
 #servicosPrev:focus{
@@ -274,6 +275,9 @@ body{
     height: 80%!important;
     background-color: white;
     margin: 0 10px 0 10px;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /*div com os títulos dos serviços nas screens*/
 .servicosScreenDivTitulo{
@@ -291,19 +295,46 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 /*classe das div das imagens nas screens dos serviços*/
 .serviçosScreenDivImg{
     /*clippy para fazer o círculo*/
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    width: 60%;
-    height: 25%;
+    -webkit-clip-path: circle(50% at 50% 50%) !important;
+    clip-path: circle(50% at 50% 50%) !important;
+    width: auto;
+    height: 40%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/*imagem da Screen do serviço*/
 .serviçosScreenImg{
     height: 100%;
+    max-width: 100%;
     width: auto;
 }
+/*div com o texto nas screens dos serviços*/
+.serviçosScreenDivTexto{
+    width: 80%;
+    height: 30%;
+    margin: 0 10% 0 10%;
+}
+/*texto nas screens dos serviços*/
+.servicosScreenTexto{
+    font-family: var(--fontGeral);
+    font-size: 16px;
+    margin: 0;
+}
+.servicosScreenDivBtn{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*Aqui estão as coisas do footer*/
 #footer{
