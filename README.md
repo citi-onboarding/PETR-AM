@@ -11,7 +11,10 @@ Dentro da pasta do projeto, rode o comando:
   python -m venv env
 
 Ativando o ambiente virtual:
-  env\Scripts\activate
+  Windows
+    env\Scripts\activate
+  Linux
+    source env/bin/activate
 
 Instalando Django:
   pip install django
