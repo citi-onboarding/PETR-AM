@@ -12,23 +12,46 @@
     <!--NavBar-->
     <nav id="navBar">
         <!--Divs com os grupos de links para a movimentação-->
-        <div id="navBarConjunto">
-            <div class="navDiv" id="navDivLogo">
-                <img src="{% static "imagens/navbar/petr-amnegativasemfundo.png" %}" id="navBarLogo">
+        <div id="navBarWeb">
+            <div class="navDiv navDivLogo">
+                <img src="{% static "imagens/navbar/petr-amnegativasemfundo.png" %}" class="navBarLogo">
             </div>
-                <div class="navDiv">
-                    <a href="">Sobre Nós</a>
-                </div>
-                <div class="navDiv">
-                    <a href="">Equipe</a>
-                </div>
-                <div class="navDiv">
-                    <a href="#servicos">Serviços</a>
-                </div>
-                <div class="navDiv">
-                    <a href="">Contato</a>
-                </div>
-            <div class="navDiv" id="navDivBlog">
+            <div class="navDiv">
+                <a href="">Sobre Nós</a>
+            </div>
+            <div class="navDiv">
+                <a href="">Equipe</a>
+            </div>
+            <div class="navDiv">
+                <a href="#servicos">Serviços</a>
+            </div>
+            <div class="navDiv">
+                <a href="">Contato</a>
+            </div>
+            <div class="navDiv navDivBlog">
+                <a href="">Blog</a>
+            </div>
+        </div>
+        <!--Navmobile-->
+        <div id="navBarMobile">
+            <div class="navHamClick">
+                <div class="navBarraLaranja"></div>
+                <div class="navBarraLaranja"></div>
+                <div class="navBarraLaranja"></div>
+            </div>
+            <div class="navHamburguer">
+                <ul class="navListaLinks">
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="#servicos">Servicos</a></li>
+                    <li><a href="">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="navDiv navDivLogo">
+                <img src="{% static "imagens/navbar/PetramNome.png" %}" class="navBarLogo">
+            </div>
+            <!--O que vai ficar escondido-->
+            <div class="navDivBlogM">
                 <a href="">Blog</a>
             </div>
         </div>
@@ -195,8 +218,9 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
-    <!--Slick banner aqui-->
+    <!--Slick-->
     <script type="text/javascript" src="{% static 'slick-1.8.1/slick/slick.min.js' %}"></script>
+    <!--Slick banner aqui-->
     <script type="text/javascript">
         $(document).ready(function(){
             $('#bannerGroup').slick({
