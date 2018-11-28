@@ -9,7 +9,7 @@
 /*serve para incluir fontes que não são padrão*/
 @font-face{
     font-family: BaronNeue;
-    src: url(fonts/Baron\ Neue/Baron\ Neue.otf);
+    src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
 }
 body{
     height: 100vh;
@@ -659,10 +659,6 @@ footer a{
     }
 }
 @media(max-width: 750px){
-    /*banner*/
-    #bannerS1{
-        background-image: url("imagens/banner/Trabalhadores\ 1.jpg");
-    }
     /*footer*/
     #footerMapsDT{
         height: 15%;
