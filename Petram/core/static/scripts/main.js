@@ -25,5 +25,8 @@ $(document).ready(function(){
 
 /*Hamburguer*/
 $('.navHamClick').click(function() {
-  $('.navHamburguer').toggleClass('navHamburguerOn');
-})
+  $('.navHamburguer').slideToggle(400, function(){
+    if(this.style.display != "none")
+      this.style.display = "flex";
+  });
+});
