@@ -590,7 +590,7 @@ body{
     color: white;
     display: flex;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     font-family: var(--fontGeral);
 }
 /*removendo as linhas dos links*/
@@ -639,7 +639,7 @@ footer a{
     }
     /*textos do div*/
     .footerTexto{
-        font-size: 20px;
+        font-size: 18px;
     }
     #footerMapsDT .footerTexto{
         font-size: 12px;
@@ -705,7 +705,7 @@ footer a{
 @media(max-width: 880px){
     /*textos do footer*/
     .footerTexto{
-        font-size: 18px;
+        font-size: 16px;
     }
     /*texto do endereço*/
     #footerMapsDT .footerTexto{
@@ -924,7 +924,7 @@ footer a{
     }
     /*texto geral do footer*/
     .footerTexto{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media(max-width: 749px){
@@ -1008,7 +1008,7 @@ footer a{
         width: 56.25%;
     }
     .footerTexto{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 @media(max-width: 386px){
@@ -1026,7 +1026,7 @@ footer a{
         height: 80%;
     }
     .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media(max-width: 365px){
@@ -1051,7 +1051,7 @@ footer a{
     }
     /*textos do footer*/
     .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
     #footerConjunto{
         width: 100%;
@@ -1060,7 +1060,7 @@ footer a{
 @media(max-width: 290px){
     /*textos do footer*/
     .footerTexto{
-        font-size: 12px;
+        font-size: 10px;
     }
     /*legenda do mapa*/
     #footerMapsDT .footerTexto{
@@ -1081,7 +1081,7 @@ footer a{
 /*iphoneX*/
 @media(max-width: 376px) and (min-width: 375px) and (max-height: 813px) and (min-height: 812px){
     .footerTexto{
-        font-size: 16px;
+        font-size: 14px;
     }
     #footerMapsDT .footerTexto{
         font-size: 14px;
@@ -1095,7 +1095,7 @@ footer a{
         font-size: 14px;
     }
     .footerTexto{
-        font-size: 16px;
+        font-size: 14px;
     }
     #footerMapsDT .footerTexto{
         font-size: 10px;
@@ -1113,7 +1113,7 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
     #footerMapsDT .footerTexto{
         font-size: 10px;
@@ -1131,7 +1131,7 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
     #footerMapsDT .footerTexto{
         font-size: 8px;
@@ -1152,7 +1152,7 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
     #footerMaps{
         width: 75%;
@@ -1173,7 +1173,7 @@ footer a{
         font-size: 18px;
     }
     .footerTexto{
-        font-size: 18px;
+        font-size: 16px;
     }
     #footerMapsDT .footerTexto{
         font-size: 14px;
@@ -1191,7 +1191,7 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
     #footerMaps{
         width: 75%;
@@ -1221,7 +1221,7 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 14px;
+        font-size: 10px;
     }
     #footerMaps{
         width: 75%;
@@ -1247,7 +1247,7 @@ footer a{
         height: 85%;
     }
     .footerTexto{
-        font-size: 18px;
+        font-size: 16px;
     }
     #footerMapsDT .footerTexto{
         font-size: 14px;
