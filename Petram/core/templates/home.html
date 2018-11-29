@@ -92,17 +92,20 @@
         </div>
         <!--Div que receber o slick-->
         <div id="servicosGroup">
-            <!--Screen1-->
+            <!--Screen-->
+            {% for servico in servicos %}
             <div class="servicosScreen">
-                <div class="servicosScreenCinza"></div>
+                {% if servicos.count > 3 %}
+                    <div class="servicosScreenCinza"></div>
+                {% endif %}
                 <div class="servicosScreenDivTitulo">
-                    <p class="servicosScreenTitulo">Serviço 1</p>
+                    <p class="servicosScreenTitulo">{{ servico.titulo }}</p>
                 </div>
                 <div class="serviçosScreenDivImg">
-                    <img class="serviçosScreenImg" src="{% static "imagens/servicos/servicosImgTeste.jpg" %}">
+                    <img class="serviçosScreenImg" src="{{servico.foto.url}}">
                 </div>
                 <div class="serviçosScreenDivTexto">
-                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
+                    <p class="servicosScreenTexto">{{ servico.texto }}</p>
                 </div>
                 <div class="servicosScreenDivBtn">
                     <button class="servicosScreenBtn">
@@ -110,60 +113,7 @@
                     </button>
                 </div>
             </div>
-            <!--Screen2-->
-            <div class="servicosScreen">
-                <div class="servicosScreenCinza"></div>
-                <div class="servicosScreenDivTitulo">
-                    <p class="servicosScreenTitulo servicosTexto">Serviço 2</p>
-                </div>
-                <div class="serviçosScreenDivImg">
-                    <img class="serviçosScreenImg" src="{% static "imagens/servicos/servicosImgTeste.jpg" %}">
-                </div>
-                <div class="serviçosScreenDivTexto">
-                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
-                </div>
-                <div class="servicosScreenDivBtn">
-                    <button class="servicosScreenBtn">
-                        <a href="">Contratar</a>
-                    </button>
-                </div>
-            </div>
-            <!--Screen3-->
-            <div class="servicosScreen">
-                <div class="servicosScreenCinza"></div>
-                <div class="servicosScreenDivTitulo">
-                    <p class="servicosScreenTitulo servicosTexto">Serviço 3</p>
-                </div>
-                <div class="serviçosScreenDivImg">
-                    <img class="serviçosScreenImg" src="{% static "imagens/servicos/servicosImgTeste.jpg" %}">
-                </div>
-                <div class="serviçosScreenDivTexto">
-                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
-                </div>
-                <div class="servicosScreenDivBtn">
-                    <button class="servicosScreenBtn">
-                        <a href="">Contratar</a>
-                    </button>
-                </div>
-            </div>
-            <!--Screen4-->
-            <div class="servicosScreen">
-                <div class="servicosScreenCinza"></div>
-                <div class="servicosScreenDivTitulo">
-                    <p class="servicosScreenTitulo servicosTexto">Serviço 4</p>
-                </div>
-                <div class="serviçosScreenDivImg">
-                    <img class="serviçosScreenImg" src="{% static "imagens/servicos/servicosImgTeste.jpg" %}">
-                </div>
-                <div class="serviçosScreenDivTexto">
-                    <p class="servicosScreenTexto">Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço. Breve descrição do serviço.</p>
-                </div>
-                <div class="servicosScreenDivBtn">
-                    <button class="servicosScreenBtn">
-                        <a href="">Contratar</a>
-                    </button>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 

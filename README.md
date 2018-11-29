@@ -27,3 +27,11 @@ Verifique se os requerimentos batem com os atuais usando:
 
 Para rodar, na pasta onde há o manage.py use:
   python manage.py runserver
+
+Para testar as integrações use em outro terminal o seguinte comando na pasta que possui o manage.py:
+  -python manage.py createsuperuser
+  -crie sua conta
+
+Agora você pode abrir a página e usar /admin no url para abrir a página admin
+  faça login
+  Adicione serviços e veja o funcionamento na página, lembrando de atualizar ela.
