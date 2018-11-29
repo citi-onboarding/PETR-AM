@@ -31,7 +31,7 @@ body{
     background-color: var(--navColor);
 }
 /*Conjunto com as coisas da navbar*/
-#navBarConjunto{
+#navBarWeb{
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
@@ -57,12 +57,12 @@ body{
     font-family: var(--fontGeral);
 }
 /*div do blog na nav*/
-#navDivBlog{
+.navDivBlog{
     background-color: #DA802B;
     justify-self: flex-end;
     margin: 0;
 }
-#navDivBlog a{
+.navDivBlog a{
     width: 100%;
     height: 100%;
     display: flex;
@@ -70,7 +70,7 @@ body{
     justify-content: center;
 }
 /*div com a logo da petram na navbar*/
-#navDivLogo{
+.navDivLogo{
     width: 25%;
     height: 100%;
     display: flex;
@@ -79,10 +79,14 @@ body{
     justify-content: flex-start;
 }
 /*logo da petram na navbar*/
-#navBarLogo{
+.navBarLogo{
     width: auto;
     max-width: 100%;
     height: 70%;
+}
+/*Aqui é a navBarMobile*/
+#navBarMobile{
+    display: none;
 }
 
 /*Aqui estão as coisas do banner*/
@@ -601,11 +605,11 @@ footer a{
     .navDiv{
         width: 12%;
     }
-    #navDivLogo{
+    .navDivLogo{
         margin-right: 3%;
     }
     /*texto para links da nav*/
-    #navBarConjunto{
+    #navBarWeb{
         margin-left: 5%;
         margin-right: 5%;
         width: 90%;
@@ -659,6 +663,97 @@ footer a{
     }
 }
 @media(max-width: 750px){
+    /*NavBar*/
+    #navBarWeb{
+        display: none;
+    }
+    #navBarMobile{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: relative;
+    }
+    .navDivLogo{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 0 0 3%;
+        z-index: 5;
+    }
+    .navLogo{
+        width: 80%;
+        height: auto;
+    }
+    .navDivBlogM{
+        width: 15%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: rgba(0,0,0,0.56);
+        border-width: 1px;
+        border-style: solid;
+        background-color: #DA802B;
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+    }
+    .navDivBlogM a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: var(--fontGeral);
+    }
+    .navHamClick{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 5;
+        margin-left: 5%;
+    }
+    .navBarraLaranja{
+        width: 100%;
+        height: 12%;
+        background-color: #DA802B;
+        border-radius: 4px 4px 4px 4px;
+    }
+    .navHamburguer{
+        background-color: #C37022;
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 4;
+        margin: 0;
+        top: 0;
+
+    }
+    .navListaLinks{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .navListaLinks a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: var(--fontGeral);
+    }
+    
     /*footer*/
     #footerMapsDT{
         height: 15%;
