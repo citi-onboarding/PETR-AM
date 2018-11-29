@@ -228,6 +228,9 @@ body{
     height: 100%;
     width: 80%;
     font-family: var(--fontGeral);
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontGeral);
 }
 
 
@@ -436,6 +439,11 @@ body{
     width: 40%;
     background-color: #47C647;
     border: none;
+    color: white;
+    font-family: var(--fontGeral);
+}
+.servicosScreenBtn a{
+    text-decoration: none;
     color: white;
     font-family: var(--fontGeral);
 }
@@ -775,10 +783,10 @@ footer a{
     .navHamburguer{
         background-color: #C37022;
         width: 50%;
-        height: 100vh;
+        height: 85vh;
+        padding-top: 15vh;
         position: absolute;
         display: none;
-        align-items: center;
         justify-content: center;
         z-index: 4;
         margin: 0;
@@ -786,20 +794,21 @@ footer a{
 
     }
     .navListaLinks{
-        width: 100%;
+        margin: 0;
+        margin-left: 15%;
+        width: 85%;
         height: 40%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         padding: 0;
-        margin: 0;
         list-style-type: none;
     }
     .navListaLinks a{
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 24px;
         font-family: var(--fontGeral);
     }
     
@@ -1029,6 +1038,9 @@ footer a{
     
 }
 @media(max-width: 331px){
+    .navHamburguer a{
+        font-size: 18px;        
+    }
     #servicosTitulo{
         font-size: 28px;
     }
@@ -1237,4 +1249,18 @@ footer a{
     #footerMapsDT .footerTexto{
         font-size: 14px;
     }
+}
+/*configurando os efeitos de click*/
+
+a:focus{
+    outline: none;
+    background: inherit;
+}
+button:focus{
+    outline: none;
+}
+a:active{
+    outline: none;
+    border: none;
+    color: white;
 }
