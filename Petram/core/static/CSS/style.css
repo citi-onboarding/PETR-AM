@@ -1034,12 +1034,25 @@ footer a{
     }
 }
 @media(max-width: 322px){
+    #bannerCTATexto{
+        font-size: 14px;
+    }
     /*textos do footer*/
     .footerTexto{
         font-size: 14px;
     }
     #footerConjunto{
         width: 100%;
+    }
+}
+@media(max-width: 290px){
+    /*textos do footer*/
+    .footerTexto{
+        font-size: 12px;
+    }
+    /*legenda do mapa*/
+    #footerMapsDT .footerTexto{
+        font-size: 10px;
     }
 }
 /*iphone 5*/
@@ -1063,6 +1076,12 @@ footer a{
     }
 }
 @media(max-width: 813px) and (min-width: 812px) and (max-height: 376px) and (min-height: 375px){
+    #bannerCTATexto{
+        font-size: 16px;
+    }
+    #bannerCTABTNTexto{
+        font-size: 14px;
+    }
     .footerTexto{
         font-size: 16px;
     }
@@ -1072,6 +1091,9 @@ footer a{
 }
 /*iphone 6/7/8 plus*/
 @media(max-width: 737px) and (min-width: 736px) and (max-height: 415px) and (min-height: 414px){
+    #bannerCTATexto{
+        font-size: 16px;
+    }
     .serviçosScreenDivImg{
         margin-bottom: 0%; 
     }
@@ -1087,6 +1109,9 @@ footer a{
 }
 /*iphone 6/7/8*/
 @media(max-width: 668px) and (min-width: 667px) and (max-height: 376px) and (min-height: 375px){
+    #bannerCTATexto{
+        font-size: 16px;
+    }
     .serviçosScreenDivImg{
         margin-bottom: 0%; 
     }
@@ -1102,6 +1127,12 @@ footer a{
 }
 /*iphone 5/se*/
 @media(max-width: 569px) and (min-width: 568px) and (max-height: 321px) and (min-height: 320px){
+    #bannerCTABTNTexto{
+        font-size: 12px;
+    }
+    #bannerCTATexto{
+        font-size: 16px;
+    }
     .serviçosScreenDivImg{
         margin-bottom: 0%; 
     }
@@ -1120,6 +1151,12 @@ footer a{
 }
 /*iPad*/
 @media(max-width: 769px) and (min-width: 768px) and (max-height: 1025px) and (min-height: 1024px){
+    .navDivLogo{
+        width: 20%;
+    }
+    .navDiv a{
+        font-size: 18px;
+    }
     .servicosScreenTexto{
         font-size: 18px;
     }
@@ -1132,6 +1169,9 @@ footer a{
 }
 /*Pixel 2*/
 @media(max-width: 732px) and (min-width: 731px) and (max-height: 412px) and (min-height: 411px){
+    #bannerCTATexto{
+        font-size: 16px;
+    }
     .serviçosScreenDivImg{
         margin-bottom: 0%; 
     }
@@ -1148,8 +1188,17 @@ footer a{
         font-size: 9px;
     }
 }
+/*Pixel 2XL*/
+@media(max-width: 824px) and (min-width: 823px) and (max-height: 412px) and (min-height: 411px){
+    #bannerCTATexto{
+        font-size: 16px;
+    }
+}
 /*Galaxy S5*/
 @media(max-width: 641px) and (min-width: 640px) and (max-height: 361px) and (min-height: 360px){
+    #bannerCTATexto{
+        font-size: 16px;
+    }
     .serviçosScreenDivImg{
         margin-bottom: 0%; 
     }
@@ -1168,6 +1217,9 @@ footer a{
 }
 /*iPad Pro*/
 @media(max-width: 1025px) and (min-width: 1024px) and (max-height: 1367px) and (min-height: 1366px){
+    .navDiv a{
+        font-size: 18px;
+    }
     .servicosScreenTexto{
         font-size: 22px;
     }
@@ -1184,15 +1236,5 @@ footer a{
     }
     #footerMapsDT .footerTexto{
         font-size: 14px;
-    }
-}
-@media(max-width: 290px){
-    /*textos do footer*/
-    .footerTexto{
-        font-size: 12px;
-    }
-    /*legenda do mapa*/
-    #footerMapsDT .footerTexto{
-        font-size: 10px;
     }
 }
