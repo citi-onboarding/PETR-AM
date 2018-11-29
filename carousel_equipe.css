@@ -67,7 +67,7 @@ body {
   width: 300px !important;
   height: 500px !important;
   align-items: center;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   text-align: center;
   /* margin: -10px; */
 }
@@ -90,6 +90,7 @@ body {
 
 /* STYLE NOME + FUNÇÃO */
 .name P {
+  width: 300px;
   margin-bottom: 0;
   padding: 0;
   text-align: center;
@@ -98,10 +99,16 @@ body {
 /* STYLE NOME */
 .nome {
   font-size: 35px;
+  margin-left: 20px;
+}
+
+.nome p {
+  text-align: center;
 }
 
 /* STYLE FUNÇÃO */
 .função {
+  width: 350px !important;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -111,9 +118,11 @@ body {
 /* STYLE DESCRIÇÃO DA FUNÇÃO */
 .function {
   justify-content: center;
-  width: 50%;
+  width: 250px;
   font-size: 18px;
   text-align: center;
+  max-height: 200px;
+  /* justify-content: flex-start !important; */
 }
 
 #descricao p {
@@ -170,13 +179,13 @@ body {
 
 /* STYLE SETAS DO CASSOSEL */
 .slick-prev {
-  margin-left: 10%;
+  margin-left: 100px;
   z-index: 1000;
   margin-bottom: 50px !important;
 }
 
 .slick-next {
-  margin-right: 0%;
+  margin-right: 0px;
   z-index: 1000;
   margin-bottom: 50px !important;
 }
