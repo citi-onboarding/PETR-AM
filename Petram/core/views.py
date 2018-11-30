@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-from core.models import Servico
-
+from core.models import Servico, Funcionario
 
 class HomeView(TemplateView):
     template_name = "home.html"
@@ -9,4 +8,5 @@ class HomeView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["servicos"] = Servico.objects.all().order_by('-titulo')
+        context["funcionarios"] = Funcionario.objects.all().order_by('-nome')
         return context
