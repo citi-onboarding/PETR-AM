@@ -786,7 +786,7 @@ footer a{
     .navHamburguer{
         background-color: #C37022;
         width: 50%;
-        height: 85vh;
+        height: 30vh;
         padding-top: 15vh;
         position: absolute;
         display: none;
@@ -800,7 +800,7 @@ footer a{
         margin: 0;
         margin-left: 15%;
         width: 85%;
-        height: 40%;
+        height: 80%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
