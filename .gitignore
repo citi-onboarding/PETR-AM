@@ -1,3 +1,5 @@
 db.*
 *.pyc
 env/
+Petram/media/
+.vscode
