@@ -12,13 +12,16 @@
     src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
 }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     align-items: flex-start;
     flex-wrap: wrap;
+    font-family: 'BaronNeue';
+    margin: 0;
+  color: white;
 }
 /*Aqui estão as coisas da navBar*/
 #navBar{

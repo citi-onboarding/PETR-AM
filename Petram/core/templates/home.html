@@ -5,8 +5,10 @@
     <meta charset="utf-8" />
     <title>PETR-AM Jr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/carousel_equipe.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'slick-1.8.1/slick/slick.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static '/slick-1.8.1/slick/slick-theme.css' %}">
 </head>
 <body>
     <!--NavBar-->
@@ -20,7 +22,7 @@
                 <a href="">Sobre Nós</a>
             </div>
             <div class="navDiv">
-                <a href="">Equipe</a>
+                <a href="#equipeDivTudo">Equipe</a>
             </div>
             <div class="navDiv">
                 <a href="#servicos">Serviços</a>
@@ -42,7 +44,7 @@
             <div class="navHamburguer">
                 <ul class="navListaLinks">
                     <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="#equipeDivTudo">Nossa Equipe</a></li>
                     <li><a href="#servicos">Servicos</a></li>
                     <li><a href="">Contatos</a></li>
                 </ul>
@@ -79,6 +81,195 @@
             </div>
             <div class="bannerScreen" style='background-image: url("{% static "imagens/banner/Trabalhadores 2.jpg" %}");'>
             </div>
+        </div>
+    </div>
+
+    <!-- Carrossel Equipe -->
+    <div class="equipe" id="equipeDivTudo">
+        <!-- DIV TÍTULO -->
+        <div id="conhecaNossaEquipe">
+            <div id="greenMark"></div>
+            <p id="titulo">conheça nossa equipe</p>
+        </div>
+        <!-- DIV CARROSSEL -->
+        <div class="carousel">
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Thalyson Fernandes</p>
+                    <p class="função">Diretor Presidente</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p id="descricao">Responsável pela elaboração, coordenação e execução do Planejamento Estratégico da EJ, assim como representa a associação judicial e extrajudicialmente.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Gabriel Leles</p>
+                    <p class="função">Diretor de Projetos</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Gerencia propostas de serviços. Coordena o detalhamento, estimativa de custos e cronograma de projetos, garantindo o padrão de qualidade.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Igor Santos</p>
+                    <p class="função">Diretor de Gestão de Pessoas</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Proporciona o planejamento de carreira, estruturação de treinamentos, instituição de programas voltados ao crescimento dos membros e garantia de cumprimento de metas.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Naomi França</p>
+                    <p class="função">Trainee em Gestão de Pessoas</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Coordena e elabora os processos de admissão e desligamento da associação, avaliações de desempenho e promove capacitação para membros.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Jessé Gonçalves</p>
+                    <p class="função">Trainee em Marketing</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Estabelece objetivos, políticas e ações de acordo com as tendências do mercado. Desenvolve estratégias de gerenciamento dos canais de comunicação.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Thayná Cavalcanti</p>
+                    <p class="função">Trainee em Marketing</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Estabelece objetivos, políticas e ações de acordo com as tendências do mercado. Desenvolve estratégias de gerenciamento dos canais de comunicação.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Débora Tarouquela</p>
+                    <p class="função">Trainee em Projetos</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Acompanha, documenta e administra investimentos durante a execução de um projeto, a fim de cumprir metas, prazos e custos estabelecidos.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Victor Gomes</p>
+                    <p class="função">Trainee em Projetos</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Acompanha, documenta e administra investimentos durante a execução de um projeto, a fim de cumprir metas, prazos e custos estabelecidos.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Gabriel Calixto</p>
+                    <p class="função">Trainee em Projetos</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Acompanha, documenta e administra investimentos durante a execução de um projeto, a fim de cumprir metas, prazos e custos estabelecidos.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Thales Nogueira</p>
+                    <p class="função">Trainee em ADM/FIN</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Aprova os orçamentos, preços, títulos e documentos que representem obrigações financeiras da associação. Gerencia registros financeiros e comprovantes.</p>
+                </div>
+            </div>
+            <!-- DIV DE CADA PESSOA -->
+            <div class="pessoa">
+                <!-- DIV IMAGEM -->
+                <div class="photo">
+                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                </div>
+                <!-- DIV NOME + FUNÇÃO -->
+                <div class="name">
+                    <p class="nome">Emely Assis</p>
+                    <p class="função">Trainee em ADM/FIN</p>
+                </div>
+                <!-- DIV DESCRIÇÃO DA FUNÇÃO -->
+                <div class="function">
+                    <p>Aprova os orçamentos, preços, títulos e documentos que representem obrigações financeiras da associação. Gerencia registros financeiros e comprovantes.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -233,6 +424,9 @@
             });
         });
     </script>
+    <!--Script das coisas gerais-->
     <script type="text/javascript" src="{% static 'scripts/main.js' %}"></script>
+    <!--Script carrossel equipe-->
+    <script type="text/javascript" src="{% static 'scripts/carousel_equipe.js' %}"></script>
 </body>
 </html>
