@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'slick-1.8.1/slick/slick.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static '/slick-1.8.1/slick/slick-theme.css' %}">
+    <link rel="shortcut icon" href="{% static 'icones/petramIcon.png' %}">
 </head>
 <body>
     <!--NavBar-->
@@ -16,7 +17,7 @@
         <!--Divs com os grupos de links para a movimentação-->
         <div id="navBarWeb">
             <div class="navDiv navDivLogo">
-                <img src="{% static "imagens/navbar/petr-amnegativasemfundo.png" %}" class="navBarLogo">
+                <img alt="PETR-AM logo" src="{% static "imagens/navbar/petr-amnegativasemfundo.png" %}" class="navBarLogo">
             </div>
             <div class="navDiv">
                 <a href="">Sobre Nós</a>
@@ -50,7 +51,7 @@
                 </ul>
             </div>
             <div class="navDiv navDivLogo">
-                <img src="{% static "imagens/navbar/PetramNome.png" %}" class="navBarLogo">
+                <img alt="PETR-AM logo" src="{% static "imagens/navbar/PetramNome.png" %}" class="navBarLogo">
             </div>
             <!--O que vai ficar escondido-->
             <div class="navDivBlogM">
@@ -72,7 +73,7 @@
                 </p>
             </div>
             <div id="bannerCTABTN">
-                <a href="" id="bannerCTABTNTexto">Conheça nossa equipe!</a>
+                <a href="#servicos" id="bannerCTABTNTexto">Conheça nossos serviços</a>
             </div>
         </div>
         <!--div com o inside do banner-->
@@ -97,7 +98,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -113,7 +114,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -129,7 +130,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -145,7 +146,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -161,7 +162,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -177,7 +178,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -193,7 +194,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -209,7 +210,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -225,7 +226,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -241,7 +242,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -257,7 +258,7 @@
             <div class="pessoa">
                 <!-- DIV IMAGEM -->
                 <div class="photo">
-                    <img src="{% static 'imagens/equipe/plantinha.jpg' %}">
+                    <img alt="foto de funcionário" src="{% static 'imagens/equipe/plantinha.jpg' %}">
                 </div>
                 <!-- DIV NOME + FUNÇÃO -->
                 <div class="name">
@@ -293,10 +294,10 @@
                     <p class="servicosScreenTitulo">{{ servico.titulo }}</p>
                 </div>
                 <div class="serviçosScreenDivImg">
-                    <img class="serviçosScreenImg" src="{{servico.foto.url}}">
+                    <img "imagem de serviço" class="serviçosScreenImg" src="{{servico.foto.url}}">
                 </div>
                 <div class="serviçosScreenDivTexto">
-                    <p class="servicosScreenTexto">{{ servico.texto }}</p>
+                    <p class ="servicosScreenTexto">{{ servico.texto }}</p>
                 </div>
                 <div class="servicosScreenDivBtn">
                     <button class="servicosScreenBtn">
@@ -315,18 +316,18 @@
             <div id="footerConjunto">
                     <!--Telefone-->
                     <div class="footerIconText">
-                        <img src="{% static "imagens/footer/call-answer.svg" %}">
+                        <img alt="telefone" src="{% static "imagens/footer/call-answer.svg" %}">
                         <p class="footerTexto">+55 (92) 98230-9545</p>
                     </div>
                     <!--Email-->
                     <div class="footerIconText">
-                        <img src="{% static "imagens/footer/mail.svg" %}">
+                        <img alt="email" src="{% static "imagens/footer/mail.svg" %}">
                         <p class="footerTexto">ej.petram@gmail.com</p>
                     </div>
                     <!--Instagram-->
                     <div class="footerIconText footerIT">
                         <a href="https://www.instagram.com/petramjr/" target="_blank" class="footerLinkImg">
-                            <img src="{% static "imagens/footer/instagram.svg" %}">
+                            <img alt="instagram" src="{% static "imagens/footer/instagram.svg" %}">
                         </a>
                         <a href="https://www.instagram.com/petramjr/" target="_blank" class="footerLT">
                             <p class="footerTexto">petramjr</p>
@@ -335,7 +336,7 @@
                     <!--Linkedin-->
                     <div class="footerIconText footerIT">
                         <a href="https://www.linkedin.com/company/petr-am/" target="_blank" class="footerLinkImg">
-                            <img src="{% static "imagens/footer/linkedin.svg" %}">
+                            <img alt="linkedin" src="{% static "imagens/footer/linkedin.svg" %}">
                         </a>
                         <a href="https://www.linkedin.com/company/petr-am/" target="_blank" class="footerLT">
                             <p class="footerTexto">petr-am</p>
@@ -345,7 +346,7 @@
 
                 <!--Imagem da PETR-AM-->
                 <div id="footerDivLogo">
-                    <img src="{% static "imagens/footer/petr-amsemfundo.png" %}" id="footerLogo">
+                    <img alt="PETR-AM logo" src="{% static "imagens/footer/petr-amsemfundo.png" %}" id="footerLogo">
                 </div>
 
                 <!--Div que vai ter o maps-->
@@ -370,7 +371,7 @@
             <!--Made with-->
             <div class="footerDivTexto" id="footer2DT">
                 <p class="footerTexto">Made with &lt/&gt and </p>
-                <img src="{% static "imagens/footer/heart.svg" %}" id="footerHeart">
+                <img alt="amor" src="{% static "imagens/footer/heart.svg" %}" id="footerHeart">
             </div>
         </div>
     </footer>
@@ -399,8 +400,8 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('#servicosGroup').slick({
-                nextArrow: '<button type="button" id="servicosNext"><img id="servicosSetaR" src="{% static "imagens/servicos/sNext.svg" %}"></button>',
-                prevArrow: '<button type="button" id="servicosPrev"><img id="servicosSetaL" src="{% static "imagens/servicos/sPrev.svg" %}"></button>',
+                nextArrow: '<button type="button" id="servicosNext"><img alt="próximo" id="servicosSetaR" src="{% static "imagens/servicos/sNext.svg" %}"></button>',
+                prevArrow: '<button type="button" id="servicosPrev"><img alt="anterior" id="servicosSetaL" src="{% static "imagens/servicos/sPrev.svg" %}"></button>',
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -411,8 +412,8 @@
                         breakpoint: 751,
                         settings:{
                             slidesToShow: 1,
-                            nextArrow: '<button type="button" id="servicosNext"><img id="servicosSetaR" src="{% static "imagens/servicos/sNext.svg" %}"></button>',
-                            prevArrow: '<button type="button" id="servicosPrev"><img id="servicosSetaL" src="{% static "imagens/servicos/sPrev.svg" %}"></button>',
+                            nextArrow: '<button type="button" id="servicosNext"><img alt="próximo" id="servicosSetaR" src="{% static "imagens/servicos/sNext.svg" %}"></button>',
+                            prevArrow: '<button type="button" id="servicosPrev"><img alt="anterior" id="servicosSetaL" src="{% static "imagens/servicos/sPrev.svg" %}"></button>',
                             infinite: true,
                             slidesToScroll: 1,
                             centerMode: true,
