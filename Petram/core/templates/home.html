@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <title>PETR-AM Jr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/carousel_equipe.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/carousel_equipe.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'slick-1.8.1/slick/slick.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static '/slick-1.8.1/slick/slick-theme.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/sobre_nos.css' %}">
     <link rel="shortcut icon" href="{% static 'icones/petramIcon.png' %}">
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <img alt="PETR-AM logo" src="{% static "imagens/navbar/petr-amnegativasemfundo.png" %}" class="navBarLogo">
             </div>
             <div class="navDiv">
-                <a href="">Sobre Nós</a>
+                <a href="#sobreNosTudoMVV">Sobre Nós</a>
             </div>
             <div class="navDiv">
                 <a href="#equipeDivTudo">Equipe</a>
@@ -47,7 +48,7 @@
             </div>
             <div class="navHamburguer">
                 <ul class="navListaLinks">
-                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="#sobreNosTudoMVV">Sobre Nós</a></li>
                     <li><a href="#equipeDivTudo">Nossa Equipe</a></li>
                     <li><a href="#servicos">Servicos</a></li>
                     <li><a href="">Contatos</a></li>
@@ -88,11 +89,136 @@
         </div>
     </div>
 
+    <div id="sobreNosTudoMVV">
+
+        <!-- DIV GERAL (TUDO) -->
+        <div id="sobreNos1">
+            <!-- DIV PARA A PARTE SUPERIOR -->
+            <div class="upperPart">
+                <!-- DIV DO TITULO + TEXTO -->
+                <div class="text">
+                    <div class="title">
+                        <!-- ICONE DO TITULO -->
+                        <div class="greenMark"></div>
+                        <!-- TITULO -->
+                        <p class="nossaHistoria">Nossa História</p>
+                    </div>
+                    <div class="historia">A PETR-AM é a primeira Empresa Júnior do segmento de Petróleo, Gás e Energia da região Norte. Formada e gerida por alunos de Engenharia de Petróleo e Gás da Universidade Federal do Amazonas, objetiva projetos com excelência nos resultados. Sem fins lucrativos, atuamos como um elo entre a comunidade acadêmica e empresas do ramo.</div>
+                </div>
+                <!-- DIV DA FOTO -->
+                <div class="photo">
+                    <div class="photo1">
+                        <img alt="foto industria" src="{% static 'imagens/MVV/icone_editado.png' %}">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIV DO MVV -->
+            <div class="MVV">
+                <!-- DIV MISSAO -->
+                <div class="missao">
+                    <p class="topic">Missão</p>
+                    <div class="icon">
+                        <img alt="missão" src="{% static 'imagens/MVV/missao.png' %}">
+                    </div>
+                    <div class="mensagem">
+                        <p>Promover a ligação dos alunos ao mercado de trabalho através de experiências reais, proporcionando o aprendizado prático para a formação de empreendedores e profissionais de excelência.</p>
+                    </div>
+                </div>
+                <!-- DIV VISAO -->
+                <div class="visao">
+                    <p class="topic">Visão</p>
+                    <div class="icon">
+                        <img alt="visão" src="{% static 'imagens/MVV/visao.png' %}">
+                    </div>
+                    <div class="mensagem">
+                        <p>Selecionar e capacitar alunos para realização de projetos, participação ativa na rede e conhecimento de mercado.</p>
+                    </div>
+                </div>
+                <!-- DIV VALORES -->
+                <div class="valores">
+                    <p class="topic">Valores</p>
+                    <div class="icon">
+                        <img alt="valores" src="{% static 'imagens/MVV/valores.png' %}">
+                    </div>
+                    <div class="mensagem">
+                        <p>Pró atividade<br>Compromisso com resultados<br>Transparência<br>Vontade de crescer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- DIV GERAL (TUDO) -->
+        <div id="sobreNos2">
+            <!-- DIV PARA A PARTE SUPERIOR -->
+            <div class="upperPart">
+                <!-- DIV DA FOTO -->
+                <div class="photo">
+                    <div class="photo1">
+                        <img alt="foto industria" src="{% static 'imagens/MVV/icone_editado.png' %}">
+                    </div>
+                </div>
+                <!-- DIV DO TITULO + TEXTO -->
+                <div class="text">
+                    <div class="title">
+                        <!-- ICONE DO TITULO -->
+                        <div class="greenMark"></div>
+                        <!-- TITULO -->
+                        <p class="nossaHistoria">Nossa História</p>
+                    </div>
+                    <div class="historia">A PETR-AM é a primeira Empresa Júnior do segmento de Petróleo, Gás e Energia da região Norte. Formada e gerida por alunos de Engenharia de Petróleo e Gás da Universidade Federal do Amazonas, objetiva projetos com excelência nos resultados. Sem fins lucrativos, atuamos como um elo entre a comunidade acadêmica e empresas do ramo.</div>
+                </div>
+            </div>
+
+            <!-- DIV DO MVV -->
+            <div class="MVV">
+                <!-- DIV MISSAO -->
+                <div class="missao">
+                    <div class="icon">
+                        <img alt="missão" src="{% static 'imagens/MVV/missao.png' %}">
+                    </div>
+                    <div class="descricao">
+                        <p class="topic">Missão</p>
+                        <div class="mensagem">
+                            <p>Promover a ligação dos alunos ao mercado de trabalho através de experiências reais, proporcionando o aprendizado prático para a formação de empreendedores e profissionais de excelência.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- DIV VISAO -->
+                <div class="visao">
+                    <div class="icon">
+                        <img alt="visão" src="{% static 'imagens/MVV/visao.png' %}">
+                    </div>
+                    <div class="descricao">
+                        <p class="topic">Visão</p>
+                        <div class="mensagem">
+                            <p>Selecionar e capacitar alunos para realização de projetos, participação ativa na rede e conhecimento de mercado.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- DIV VALORES -->
+                <div class="valores">
+                    <div class="icon">
+                        <img alt="valores" src="{% static 'imagens/MVV/valores.png' %}">
+                    </div>
+                    <div class="descricao">
+                        <p class="topic">Valores</p>
+                        <div class="mensagem">
+                            <p>Pró atividade<br>Compromisso com resultados<br>Transparência<br>Vontade de crescer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <!-- Carrossel Equipe -->
     <div class="equipe" id="equipeDivTudo">
         <!-- DIV TÍTULO -->
         <div id="conhecaNossaEquipe">
-            <div id="greenMark"></div>
+            <div id="EgreenMark"></div>
             <p id="titulo">conheça nossa equipe</p>
         </div>
         <!-- DIV CARROSSEL -->
@@ -101,7 +227,7 @@
                 <!-- DIV DE CADA PESSOA -->
                 <div class="pessoa">
                     <!-- DIV IMAGEM -->
-                    <div class="photo">
+                    <div class="Ephoto">
                         <img alt="foto de funcionário" src="{{funcionario.foto.url}}">
                     </div>
                     <!-- DIV NOME + FUNÇÃO -->
