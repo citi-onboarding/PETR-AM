@@ -24,9 +24,9 @@ body{
     margin: 0;
     align-items: flex-start;
     flex-wrap: wrap;
-    font-family: 'BaronNeue';
+    font-family: BaronNeue, sans-serif;
     margin: 0;
-  color: white;
+    color: white;
 }
 /*Aqui estão as coisas da navBar*/
 #navBar{
@@ -1170,4 +1170,14 @@ button.slick-next.slick-arrow{
     /* 'Franklin Gothic', sans-serif; */
     height: 100%;
     background-color: #354B77;
+}
+/*contato*/
+#contatoTudoFinal{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+    background-position: center;
 }

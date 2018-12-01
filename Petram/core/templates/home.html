@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'slick-1.8.1/slick/slick.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static '/slick-1.8.1/slick/slick-theme.css' %}">
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/sobre_nos.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/contato.css' %}">
     <link rel="shortcut icon" href="{% static 'icones/petramIcon.png' %}">
 </head>
 <body>
@@ -31,7 +32,7 @@
                 <a href="#servicos">Serviços</a>
             </div>
             <div class="navDiv">
-                <a href="">Contato</a>
+                <a href="#contatoTudoFinal">Contato</a>
             </div>
             <div class="navDiv navDivBlog">
                 <a href="">Blog</a>
@@ -52,7 +53,7 @@
                     <li><a href="#sobreNosTudoMVV">Sobre Nós</a></li>
                     <li><a href="#equipeDivTudo">Nossa Equipe</a></li>
                     <li><a href="#servicos">Servicos</a></li>
-                    <li><a href="">Contatos</a></li>
+                    <li><a href="#contatoTudoFinal">Contatos</a></li>
                 </ul>
             </div>
             <div class="navDiv navDivLogo">
@@ -272,11 +273,60 @@
                 </div>
                 <div class="servicosScreenDivBtn">
                     <button class="servicosScreenBtn">
-                        <a href="">Contratar</a>
+                        <a href="#contatoTudoFinal">Contratar</a>
                     </button>
                 </div>
             </div>
             {% endfor %}
+        </div>
+    </div>
+
+    <div id="contatoTudoFinal" style="background-image: url('{% static "imagens/contato/Trabalhadores2.jpg" %}');">
+        <div id="contato1">
+            <div id="title">
+                <!-- ICONE DO TITULO -->
+                <div id="greenMark"></div>
+                <!-- TITULO -->
+                <p id="contateNos">Contate-nos</p>
+            </div>
+            <div id="background"></div>
+            <div id="campos">
+                <form action="/form" method="get">
+                    <div id="camposDaEsquerda">
+                        <input class="esquerda" type="text" nome="nome" placeholder="Nome*" required="required">
+                        <input class="esquerda" type="text" nome="phone" placeholder="Telefone">
+                        <input class="esquerda" type="email" nome="email" placeholder="E-mail*" required="required">
+                        <input class="esquerda" type="text" nome="conheceu" placeholder="Como você conheceu a PETR-AM">
+                    </div>
+                    <div id="camposDaDireita">
+                        <input class="direita" type="text" nome="assunto" placeholder="Assunto">
+                        <textarea class="direita" id="msg" nome="mensagem" placeholder="Deixe-nos uma mensagem!"></textarea>  
+                    </div>
+                    <input id ="enviar" type="submit" value="ENVIAR">
+                </form>
+            </div>
+        </div>
+
+        <!-- Contato 2 -->
+        <div id="contato2">
+            <div id="title">
+                <!-- ICONE DO TITULO -->
+                <div id="greenMark"></div>
+                <!-- TITULO -->
+                <p id="contateNos">Contate-nos</p>
+            </div>
+            <div id="background"></div>
+            <div id="campos">
+                <form action="/action_page.php" method="get">
+                    <input class="esquerda" type="text" nome="nome" placeholder="Nome*" required="required">
+                    <input class="esquerda" type="tel" nome="phone" placeholder="Telefone">
+                    <input class="esquerda" type="email" nome="email" placeholder="E-mail*" required="required">
+                    <input class="esquerda" type="text" nome="conheceu" placeholder="Conheceu">
+                    <input class="direita" type="text" nome="assunto" placeholder="Assunto">
+                    <textarea class="direita" id="msg" nome="mensagem" placeholder="Deixe-nos uma mensagem!"></textarea>  
+                    <input id ="enviar" type="submit" value="ENVIAR">
+                </form>
+            </div>
         </div>
     </div>
 
