@@ -38,9 +38,12 @@
         <!--Navmobile-->
         <div id="navBarMobile">
             <div class="navHamClick">
-                <div class="navBarraLaranja"></div>
-                <div class="navBarraLaranja"></div>
-                <div class="navBarraLaranja"></div>
+                <div id="navHamBarras">
+                    <div class="navBarraLaranja"></div>
+                    <div class="navBarraLaranja"></div>
+                    <div class="navBarraLaranja"></div>
+                </div>
+                
             </div>
             <div class="navHamburguer">
                 <ul class="navListaLinks">
@@ -229,8 +232,8 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('#bannerGroup').slick({
-                nextArrow: '<button type="button" id="bannerNext"><div id="bannerSetaR"></div></button>',
-                prevArrow: '<button type="button" id="bannerPrev"><div id="bannerSetaL"></div></button>',
+                nextArrow: '<button type="button" id="bannerNext"><img alt="próximo" id="bannerSetaR" src="{% static "imagens/banner/sNext.svg" %}"></div></button>',
+                prevArrow: '<button type="button" id="bannerPrev"><img alt="anterior" id="bannerSetaL" src="{% static "imagens/banner/sPrev.svg" %}"></button>',
                 infinite: true,
                 autoplay: true,
                 autoplaySpeed: 3000
