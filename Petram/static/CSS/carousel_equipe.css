@@ -2,6 +2,11 @@
   font-family: BaronNeue;
   src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
 }
+@font-face{
+  font-family: oratorSTD;
+  src: url(../fonts/OratorStd.otf);
+}
+
 
 /* STYLE BODY */
 body {
@@ -122,10 +127,11 @@ body {
   /* justify-content: flex-start !important; */
 }
 
-#descricao p {
+.descricao {
   text-align: center;
   justify-content: center;
   font-size: 18px;
+  font-family: oratorSTD;
 }
 
 /* DEFINE AS NOVAS CONFIGURAÇÕES PARA QUANDO FOR MOBILE */

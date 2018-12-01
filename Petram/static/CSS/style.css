@@ -1,15 +1,20 @@
-:root{
-    margin: 0;
-    --footerCorBorda: #878787;
-    --footerCor: #1A3160;
-    --fontGeral:  'Franklin Gothic', sans-serif;
-    --navColor: rgba(53,75,119,0.93);
-    --corGeral: #354B77;
-}
 /*serve para incluir fontes que não são padrão*/
 @font-face{
     font-family: BaronNeue;
     src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
+}
+@font-face{
+    font-family: oratorSTD;
+    src: url(../fonts/OratorStd.otf);
+}
+
+:root{
+    margin: 0;
+    --footerCorBorda: #878787;
+    --footerCor: #1A3160;
+    --fontGeral:  oratorSTD, sans-serif;
+    --navColor: rgba(53,75,119,0.93);
+    --corGeral: #354B77;
 }
 body{
     height: 100%;
@@ -199,7 +204,7 @@ body{
     align-items: center;
 }
 #bannerCTATexto{
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     margin: 0;
 }
@@ -220,7 +225,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
     height: 100%;
     width: 80%;
     font-family: var(--fontGeral);
@@ -528,6 +533,8 @@ body{
 #footerMapsDT{
     width: 100%;
     height: 30%;
+    display: flex;
+    align-items: flex-end;
 }
 
 /*Div Imagem do maps*/
@@ -543,7 +550,7 @@ body{
 /*Texo do endereco*/
 #footerMapsDT .footerTexto{
     width: 100%;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 
@@ -587,7 +594,7 @@ body{
     color: white;
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     font-family: var(--fontGeral);
 }
 /*removendo as linhas dos links*/
@@ -607,17 +614,6 @@ footer a{
 
 
 /*Responsividade*/
-@media(min-width: 1265px){
-    /*Texto do Maps*/
-    #footerMapsDT{
-        height: 20%;
-    }
-
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 80%;
-    }
-}
 @media(max-width: 1108px){
     /*texto das screens de serviço*/
     .servicosScreenTexto{
@@ -625,21 +621,15 @@ footer a{
     }
 }
 @media(max-width: 1060px){
-    /*Texto do Maps*/
-    #footerMapsDT{
-        height: 25%;
-    }
-
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 75%;
-    }
     /*textos do div*/
     .footerTexto{
-        font-size: 18px;
+        font-size: 14px;
     }
     #footerMapsDT .footerTexto{
-        font-size: 12px;
+        font-size: 8px;
+    }
+    .navDiv a{
+        font-size: 14px;
     }
 }
 @media(max-width: 986px){
@@ -668,14 +658,7 @@ footer a{
         margin-right: 5%;
         width: 90%;
     }
-    #footerMapsDT{
-        height: 20%;
-    }
 
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 80%;
-    }
     /*Texo do endereco*/
     #footerGrupoCima{
         margin-left: 5%;
@@ -690,22 +673,9 @@ footer a{
         margin-right: 5%; 
     }
 }
-@media(max-width: 965px){
-    #footerMapsDT{
-        height: 25%;
-    }
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 75%;
-    }
-}
 @media(max-width: 880px){
     /*textos do footer*/
     .footerTexto{
-        font-size: 16px;
-    }
-    /*texto do endereço*/
-    #footerMapsDT .footerTexto{
         font-size: 12px;
     }
     
@@ -812,27 +782,18 @@ footer a{
     .navListaLinks a{
         text-decoration: none;
         color: white;
-        font-size: 24px;
+        font-size: 20px;
         font-family: var(--fontGeral);
     }
     
     /*Banner*/
     #bannerCTATexto{
-        font-size: 24px;
+        font-size: 22px;
     }
     #bannerCTABTNTexto{
-        font-size: 16px;
+        font-size: 12px;
     }
 
-    /*footer*/
-    #footerMapsDT{
-        height: 15%;
-    }
-
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 85%;
-    }
     /*O footer todo*/
     #footer{
         height: 75vh;
@@ -900,7 +861,7 @@ footer a{
     }
     /*legenda do maps*/
     #footerMapsDT .footerTexto{
-        font-size: 14px;
+        font-size: 10px;
     }
     /*parte de baixo do footer*/
     #footerGrupoBaixo{
@@ -928,7 +889,7 @@ footer a{
     }
     /*texto geral do footer*/
     .footerTexto{
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 @media(max-width: 749px){
@@ -955,7 +916,7 @@ footer a{
 }
 @media(max-width: 565px){
     #bannerCTATexto{
-        font-size: 20px;
+        font-size: 18px;
     }
     #bannerCTABTNTexto{
         font-size: 14px;
@@ -964,40 +925,20 @@ footer a{
         height: auto;
         width: 60%;
     }
-    #footerMapsDT .footerTexto{
-        font-size: 12px;
-    }
-}
-@media(max-width: 482px){
-    #footerMapsDT{
-        height: 20%;
-    }
-
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 80%;
-    }
 }
 @media(max-width: 440px){
     /*banner*/
     #bannerCTATexto{
-        font-size: 18px;
+        font-size: 14px;
     }
     #bannerCTABTNTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
     /*Serviços*/
     #servicosTitulo{
         font-size: 36px;
     }
-    #footerMapsDT{
-        height: 15%;
-    }
 
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 85%;
-    }
     /*tudo do map*/
     #footerMaps{
         width: 75%;
@@ -1012,7 +953,7 @@ footer a{
         width: 56.25%;
     }
     .footerTexto{
-        font-size: 14px;
+        font-size: 10px;
     }
 }
 @media(max-width: 386px){
@@ -1021,25 +962,9 @@ footer a{
         font-size: 32px;
     }
 
-    #footerMapsDT{
-        height: 20%;
-    }
-
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 80%;
-    }
     .footerTexto{
-        font-size: 12px;
+        font-size: 10px;
     }
-}
-@media(max-width: 365px){
-    /*legenda do map*/
-    #footerMapsDT .footerTexto{
-        font-size: 12px;
-    }
-    /*textos do footer*/
-    
 }
 @media(max-width: 331px){
     .navHamburguer a{
@@ -1055,7 +980,7 @@ footer a{
     }
     /*textos do footer*/
     .footerTexto{
-        font-size: 12px;
+        font-size: 10px;
     }
     #footerConjunto{
         width: 100%;
@@ -1066,29 +991,11 @@ footer a{
     .footerTexto{
         font-size: 10px;
     }
-    /*legenda do mapa*/
-    #footerMapsDT .footerTexto{
-        font-size: 10px;
-    }
-}
-/*iphone 5*/
-@media(max-width: 321px) and (min-width: 320px) and (max-height: 569px) and (min-height: 568px){
-    #footerMapsDT{
-        height: 25%;
-    }
-
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 75%;
-    }
 }
 /*iphoneX*/
 @media(max-width: 376px) and (min-width: 375px) and (max-height: 813px) and (min-height: 812px){
     .footerTexto{
-        font-size: 14px;
-    }
-    #footerMapsDT .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media(max-width: 813px) and (min-width: 812px) and (max-height: 376px) and (min-height: 375px){
@@ -1096,13 +1003,10 @@ footer a{
         font-size: 16px;
     }
     #bannerCTABTNTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
     .footerTexto{
-        font-size: 14px;
-    }
-    #footerMapsDT .footerTexto{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 /*iphone 6/7/8 plus*/
@@ -1117,9 +1021,6 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 12px;
-    }
-    #footerMapsDT .footerTexto{
         font-size: 10px;
     }
 }
@@ -1135,16 +1036,13 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 12px;
-    }
-    #footerMapsDT .footerTexto{
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 /*iphone 5/se*/
 @media(max-width: 569px) and (min-width: 568px) and (max-height: 321px) and (min-height: 320px){
     #bannerCTABTNTexto{
-        font-size: 12px;
+        font-size: 10px;
     }
     #bannerCTATexto{
         font-size: 16px;
@@ -1156,31 +1054,30 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 12px;
+        font-size: 10px;
     }
     #footerMaps{
         width: 75%;
     }
-    #footerMapsDT .footerTexto{
-        font-size: 9px;
-    }
 }
 /*iPad*/
+@media(max-width: 1025px) and (min-width: 1024px) and (max-height: 769px) and (min-height: 768px){
+    #footerMapsDT .footerTexto{
+        font-size: 12px;
+    }
+}
 @media(max-width: 769px) and (min-width: 768px) and (max-height: 1025px) and (min-height: 1024px){
+    #footerMapsDT .footerTexto{
+        font-size: 12px;
+    }
     .navDivLogo{
         width: 20%;
-    }
-    .navDiv a{
-        font-size: 18px;
     }
     .servicosScreenTexto{
         font-size: 18px;
     }
     .footerTexto{
-        font-size: 16px;
-    }
-    #footerMapsDT .footerTexto{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 /*Pixel 2*/
@@ -1195,20 +1092,14 @@ footer a{
         width: 40%;
     }
     .footerTexto{
-        font-size: 12px;
+        font-size: 10px;
     }
     #footerMaps{
         width: 75%;
     }
-    #footerMapsDT .footerTexto{
-        font-size: 9px;
-    }
 }
 /*Pixel 2XL*/
 @media(max-width: 824px) and (min-width: 823px) and (max-height: 412px) and (min-height: 411px){
-    #footerMapsDT .footerTexto{
-        font-size: 10px;
-    }
     #bannerCTATexto{
         font-size: 16px;
     }
@@ -1230,30 +1121,22 @@ footer a{
     #footerMaps{
         width: 75%;
     }
-    #footerMapsDT .footerTexto{
-        font-size: 10px;
-    }
 }
 /*iPad Pro*/
+@media(max-width: 1367px) and (min-width: 1366px) and (max-height: 1025px) and (min-height: 1024px){
+    #footerMapsDT .footerTexto{
+        font-size: 12px;
+    }
+}
 @media(max-width: 1025px) and (min-width: 1024px) and (max-height: 1367px) and (min-height: 1366px){
-    .navDiv a{
-        font-size: 18px;
+    #footerMapsDT .footerTexto{
+        font-size: 12px;
     }
     .servicosScreenTexto{
         font-size: 22px;
     }
-    #footerMapsDT{
-        height: 15%;
-    }
 
-    /*Div Imagem do maps*/
-    #footerMap{
-        height: 85%;
-    }
     .footerTexto{
-        font-size: 16px;
-    }
-    #footerMapsDT .footerTexto{
         font-size: 14px;
     }
 }
