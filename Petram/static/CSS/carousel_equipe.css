@@ -1,0 +1,200 @@
+@font-face{
+  font-family: BaronNeue;
+  src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
+}
+@font-face{
+  font-family: oratorSTD;
+  src: url(../fonts/OratorStd.otf);
+}
+
+
+/* STYLE BODY */
+body {
+  margin: 0;
+  color: white;
+  font-family: 'BaronNeue';
+}
+
+/* STYLE DIV GERAL */
+.equipe {
+  background-color: #354B77;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STYLE TITULO */
+#conhecaNossaEquipe {
+  opacity : 1;
+  margin-top: 3%;
+  transition : opacity 2s;
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* STYLE ICON TITULO */
+#greenMark {
+  background-color: #47C647;
+  width: 5px;
+  height: 35px;
+  margin-top: 8px;
+}
+
+#titulo {
+  margin-left: 10px;
+  margin-top: 0;
+  font-size: 45px;
+}
+
+/* STYLE CARROSSEL */
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 900px !important;
+}
+
+/* STYLE DIV DE CADA PESSOA */
+.pessoa {
+  display: flex !important;
+  flex-direction: column;
+  width: 300px !important;
+  height: 500px !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  text-align: center;
+  /* margin: -10px; */
+}
+
+
+/* STYLE IMAGEM */
+.photo img {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 30%;
+  border-radius: 60%;
+}
+
+/* SYLE IMAGEM */
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+/* STYLE NOME + FUNÇÃO */
+.name P {
+  width: 300px;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* STYLE NOME */
+.nome {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.nome p {
+  text-align: center;
+}
+
+/* STYLE FUNÇÃO */
+.função {
+  width: 350px !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* STYLE DESCRIÇÃO DA FUNÇÃO */
+.function {
+  justify-content: center;
+  width: 250px;
+  font-size: 14px;
+  text-align: center;
+  max-height: 200px;
+  /* justify-content: flex-start !important; */
+}
+
+.descricao {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: oratorSTD;
+}
+
+/* DEFINE AS NOVAS CONFIGURAÇÕES PARA QUANDO FOR MOBILE */
+@media only screen and (max-width: 750px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 300px !important;
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .nome {
+    font-size: 20px;
+  }
+
+  .função {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .photo img {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+  }
+}
+
+
+/* STYLE SETAS DO CASSOSEL */
+.slick-prev {
+  margin-left: 100px;
+  z-index: 1000;
+  margin-bottom: 50px !important;
+}
+
+.slick-next {
+  margin-right: 0px;
+  z-index: 1000;
+  margin-bottom: 50px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
+  color: white;
+}
