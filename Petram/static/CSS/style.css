@@ -24,9 +24,9 @@ body{
     margin: 0;
     align-items: flex-start;
     flex-wrap: wrap;
-    font-family: 'BaronNeue';
+    font-family: BaronNeue, sans-serif;
     margin: 0;
-  color: white;
+    color: white;
 }
 /*Aqui estão as coisas da navBar*/
 #navBar{
