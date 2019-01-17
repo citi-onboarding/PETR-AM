@@ -291,18 +291,19 @@
             </div>
             <div id="background"></div>
             <div id="campos">
-                <form action="/form" method="get">
+                <form method="POST">
+                    {% csrf_token %}<!--Necessario para reconhecer o form-->
                     <div id="camposDaEsquerda">
                         <input class="esquerda" type="text" nome="nome" placeholder="Nome*" required="required">
                         <input class="esquerda" type="text" nome="phone" placeholder="Telefone">
                         <input class="esquerda" type="email" nome="email" placeholder="E-mail*" required="required">
-                        <input class="esquerda" type="text" nome="conheceu" placeholder="Como você conheceu a PETR-AM">
+                        <input class="esquerda" type="text" nome="conheceu" placeholder="Como você conheceu a PETR-AM?">
                     </div>
                     <div id="camposDaDireita">
                         <input class="direita" type="text" nome="assunto" placeholder="Assunto">
                         <textarea class="direita" id="msg" nome="mensagem" placeholder="Deixe-nos uma mensagem!"></textarea>  
                     </div>
-                    <input id ="enviar" type="submit" value="ENVIAR">
+                    <button id ="enviar" type="submit">ENVIAR</button>
                 </form>
             </div>
         </div>

@@ -122,3 +122,14 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 
+
+TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django.TemplateBackend'
+# Use '' for top level template dir
+TEMPLATED_EMAIL_TEMPLATE_DIR = 'templated_email/'
+TEMPLATED_EMAIL_FILE_EXTENSION = 'email'
+
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'PetramContatoBot@outlook.com'
+EMAIL_HOST_PASSWORD = 'ContatoPetram'
