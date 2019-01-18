@@ -290,7 +290,7 @@
                 <p id="contateNos">Contate-nos</p>
             </div>
             <div id="background"></div>
-            <div id="campos">
+         <div id="campos">
                 <form method="POST">
                     {% csrf_token %}<!--Necessario para reconhecer o form-->
                     <div id="camposDaEsquerda">
@@ -318,18 +318,19 @@
             </div>
             <div id="background"></div>
             <div id="campos">
-                <form action="/action_page.php" method="get">
+                <form method="POST">
+                    {% csrf_token %}
                     <input class="esquerda" type="text" nome="nome" placeholder="Nome*" required="required">
-                    <input class="esquerda" type="tel" nome="phone" placeholder="Telefone">
+                    <input class="esquerda" type="text" nome="phone" placeholder="Telefone">
                     <input class="esquerda" type="email" nome="email" placeholder="E-mail*" required="required">
-                    <input class="esquerda" type="text" nome="conheceu" placeholder="Conheceu">
+                    <input class="esquerda" type="text" nome="conheceu" placeholder="Como você conheceu a PETR-AM?">
                     <input class="direita" type="text" nome="assunto" placeholder="Assunto">
                     <textarea class="direita" id="msg" nome="mensagem" placeholder="Deixe-nos uma mensagem!"></textarea>  
-                    <input id ="enviar" type="submit" value="ENVIAR">
+                    <button id ="enviar" type="submit">ENVIAR</button>
                 </form>
             </div>
         </div>
-    </div>
+    </div>   
 
     <!--Footer-->
     <footer id="footer">
