@@ -1,0 +1,865 @@
+@font-face{
+  font-family: BaronNeue;
+  src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
+}
+
+/* STYLE BODY */
+body {
+  margin: 0;
+  color: white;
+  font-family: BaronNeue, sans-serif;
+}
+
+/* STYLE DIV GERAL */
+.equipe {
+  background-color: #354B77;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STYLE TITULO */
+#conhecaNossaEquipe {
+  opacity : 1;
+  margin-top: 3%;
+  transition : opacity 2s;
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* STYLE ICON TITULO */
+#EgreenMark {
+  background-color: #47C647;
+  width: 5px;
+  height: 35px;
+  margin-top: 11px;
+}
+
+#titulo {
+  margin-left: 10px;
+  margin-top: 0;
+  font-size: 45px;
+}
+
+/* STYLE CARROSSEL */
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  top: 40px;
+  width: 900px !important;
+}
+
+/* STYLE DIV DE CADA PESSOA */
+.pessoa {
+  display: flex !important;
+  flex-direction: column;
+  width: 300px !important;
+  height: 500px !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  text-align: center;
+  /* margin: -10px; */
+}
+
+
+/* STYLE IMAGEM */
+.Ephoto img {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 30%;
+  border-radius: 60%;
+}
+
+/* SYLE IMAGEM */
+.Ephoto {
+  display: flex;
+  justify-content: center;
+}
+
+/* STYLE NOME + FUNÇÃO */
+.name P {
+  width: 300px;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* STYLE NOME */
+.nome {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.nome p {
+  text-align: center;
+}
+
+/* STYLE FUNÇÃO */
+.função {
+  width: 350px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* STYLE DESCRIÇÃO DA FUNÇÃO */
+.function {
+  justify-content: center;
+  width: 250px;
+  font-size: 14px;
+  text-align: center;
+  max-height: 200px;
+  /* justify-content: flex-start !important; */
+}
+
+#descricao p {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* DEFINE AS NOVAS CONFIGURAÇÕES PARA QUANDO FOR MOBILE */
+
+@media only screen and (max-width: 1100px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 40px;
+    width: 810px !important;
+  }
+  
+  /* STYLE DIV DE CADA PESSOA */
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 270px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+  
+  
+  /* STYLE IMAGEM */
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 30%;
+    border-radius: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 40px;
+    width: 750px !important;
+  }
+  
+  /* STYLE DIV DE CADA PESSOA */
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 250px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  .Ephoto img {
+    width: 80%;
+    height: 30%;
+  }
+  
+  .nome {
+    font-size: 22px;
+  }
+
+  .função {
+    font-size: 14px;
+  }
+  
+  #descricao {
+    font-size: 16px;
+  }
+  
+}
+
+@media only screen and (max-width: 950px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 40px;
+    width: 690px !important;
+  }
+  
+  /* STYLE DIV DE CADA PESSOA */
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 230px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+  
+  .Ephoto img {
+    width: 80%;
+    height: 30%;
+  }
+  
+  .nome {
+    font-size: 20px;
+  }
+
+  .função {
+    font-size: 14px;
+  }
+  
+  .function {
+    width: 220px;
+  }
+
+  .descricao {
+    font-size: 13px;
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 40px;
+    width: 630px !important;
+  }
+  
+  /* STYLE DIV DE CADA PESSOA */
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 210px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+  
+  .Ephoto img {
+    width: 80%;
+    height: 30%;
+  }
+  
+  .nome {
+    font-size: 18px;
+  }
+
+  .função {
+    font-size: 13px;
+  }
+  
+  .function {
+    width: 200px;
+  }
+
+  .descricao {
+    font-size: 12px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 40px;
+    width: 600px !important;
+  }
+  
+  /* STYLE DIV DE CADA PESSOA */
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 200px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+  
+  .Ephoto img {
+    width: 80%;
+    height: 30%;
+  }
+  
+  .nome {
+    font-size: 16px;
+  }
+
+  .função {
+    font-size: 12px;
+  }
+  
+  .function {
+    width: 200px;
+  }
+
+  .descricao {
+    font-size: 12px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 40px;
+    width: 570px !important;
+  }
+  
+  /* STYLE DIV DE CADA PESSOA */
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 190px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+  
+  .Ephoto img {
+    width: 80%;
+    height: 30%;
+  }
+  
+  .nome {
+    font-size: 16px;
+  }
+
+  .função {
+    font-size: 12px;
+  }
+  
+  .function {
+    width: 190px;
+  }
+
+  .descricao {
+    font-size: 12px;
+    width: 190px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20px;
+    width: 300px !important;
+  }
+
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 300px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+  }
+
+  .nome {
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  .função {
+    font-size: 16px;
+  }
+  
+  .function {
+    width: 300px;
+  }
+
+  .descricao {
+    font-size: 14px;
+    width: 300px;
+  } 
+
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20px;
+    width: 270px !important;
+  }
+
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 270px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+  }
+
+  .nome {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .função {
+    font-size: 16px;
+  }
+  
+  .function {
+    width: 270px;
+  }
+
+  .descricao {
+    font-size: 14px;
+    width: 270px;
+  } 
+
+}
+
+@media only screen and (max-width: 470px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20px;
+    width: 240px !important;
+  }
+
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 240px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+  }
+
+  .nome {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .função {
+    font-size: 16px;
+  }
+  
+  .function {
+    width: 240px;
+  }
+
+  .descricao {
+    font-size: 14px;
+    width: 240px;
+  } 
+
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20px;
+    width: 220px !important;
+  }
+
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 220px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+  }
+
+  .nome {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .função {
+    font-size: 15px;
+  }
+  
+  .function {
+    width: 220px;
+  }
+
+  .descricao {
+    font-size: 14px;
+    width: 220px;
+  } 
+
+}
+
+@media only screen and (max-width: 420px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20px;
+    width: 200px !important;
+  }
+
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 200px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+  }
+
+  .nome {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .função {
+    font-size: 14px;
+  }
+  
+  .function {
+    width: 200px;
+  }
+
+  .descricao {
+    font-size: 13px;
+    width: 200px;
+  } 
+
+}
+
+@media only screen and (max-width: 390px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20px;
+    width: 180px !important;
+  }
+
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 180px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+  }
+
+  .nome {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .função {
+    font-size: 13px;
+  }
+  
+  .function {
+    width: 180px;
+  }
+
+  .descricao {
+    font-size: 12px;
+    width: 180px;
+  } 
+
+}
+
+@media only screen and (max-width: 370px) {
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20px;
+    width: 160px !important;
+  }
+
+  .pessoa {
+    display: flex !important;
+    flex-direction: column;
+    width: 160px !important;
+    height: 500px !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    text-align: center;
+    /* margin: -10px; */
+  }
+
+  #greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  #titulo {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .Ephoto img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+  }
+
+  .nome {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .função {
+    font-size: 12px;
+  }
+  
+  .function {
+    width: 160px;
+  }
+
+  .descricao {
+    font-size: 11px;
+    width: 160px;
+  } 
+
+}
+
+/* STYLE SETAS DO CASSOSEL */
+.slick-prev {
+  margin-left: 100px;
+  z-index: 1000;
+  margin-bottom: 50px !important;
+}
+
+.slick-next {
+  margin-right: 0px;
+  z-index: 1000;
+  margin-bottom: 50px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
+  color: white;
+}
