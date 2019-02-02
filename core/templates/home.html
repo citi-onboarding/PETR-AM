@@ -292,7 +292,7 @@
             </div>
             <div id="background"></div>
          <div id="campos">
-                <form method="POST" name='contato'>
+                <form method="POST" name='contato' class='contato-form'>
                     {% csrf_token %}<!--Necessario para reconhecer o form-->
                     <div id="camposDaEsquerda">
                         <input class="esquerda" type="text" name="nome" placeholder="Nome*" required="required">
@@ -319,7 +319,7 @@
             </div>
             <div id="background"></div>
             <div id="campos">
-                <form method="POST" name='contato'>
+                <form method="POST" name='contato' class='contato-form'>
                     {% csrf_token %}
                     <input class="esquerda" type="text" name="nome" placeholder="Nome*" required="required">
                     <input class="esquerda" type="text" name="phone" placeholder="Telefone">

@@ -5,18 +5,18 @@ $(document).ready(function(){
         slidesToScroll: 3,
         dots: true,
         arrows: true,
-        
-        // define configurações quando for mobile
+        centerMode: false,
+        draggable: true,
         responsive: [
             {
-              breakpoint: 750,
+              breakpoint: 751,
               settings: {
-                // centerMode: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
                 arrows: true,
+                centerMode: true
               }
             }
         ]
