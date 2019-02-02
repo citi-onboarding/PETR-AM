@@ -1,0 +1,266 @@
+@font-face{
+    font-family: BaronNeue;
+    src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
+}
+#contato1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato2 {
+    display: none;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-color: #354B77;
+    opacity: 0.6;
+    position: relative;
+}   
+
+
+/* STYLE TITULO EM GERAL */
+#title {
+    width: 400px;;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+}
+
+/* STYLE ICON DO TITULO */
+#greenMark {
+    background-color: #47C647;
+    width: 5px;
+    height: 35px;
+    margin-top: 8px;
+    z-index: 1000;
+}
+
+/* STYLE DO TITULO */
+#contateNos {
+    margin-left: 10px;
+    margin-top: 0;
+    font-size: 45px;
+}
+
+#campos {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 100px;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+}
+
+#camposDaEsquerda {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    align-content: right;
+    align-items: flex-end;
+    left: 0;
+}
+
+.esquerda {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    margin: 5px 30px 5px 5px;
+    color: gray;
+}
+
+#camposDaDireita {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    align-content: right;
+    right: 0;
+}
+
+.direita {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    margin: 5px 5px 5px 30px;
+    color: gray;
+}
+
+#msg {
+    height: 142px;
+}
+
+#enviar {
+    background-color: #47C647;
+    position: absolute;
+    z-index: 1;
+    margin: 0 0 0 -70px;
+    padding: 9px 28px 9px 28px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    top: 350px;
+}
+
+input, textarea {
+    padding-left: 10px;
+}
+
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: black;
+}
+
+@media only screen and (max-width: 750px) {
+    #contato1 {
+        display: none;
+    }
+
+    #contato2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #background {
+        width: 100%;
+        height: 100%;
+        background-color: #354B77;
+        opacity: 0.6;
+        position: relative;
+    }   
+    
+    /* STYLE TITULO EM GERAL */
+    #title {
+        width: 400px;;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+    }
+    
+    /* STYLE ICON DO TITULO */
+    #greenMark {
+        background-color: #47C647;
+        width: 5px;
+        height: 20px;
+        margin-top: 3px;
+        z-index: 1000;
+    }
+    
+    /* STYLE DO TITULO */
+    #contateNos {
+        margin-left: 5px;
+        margin-top: 0;
+        font-size: 25px;
+    }
+    
+    #campos {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        align-items: center;
+        width: 100%;
+        height: 450px;
+        text-align: center;
+    }
+
+    form {
+        align-items: center !important;
+    }
+
+    input, textarea {
+        margin-left: 10px;
+    }
+
+    input:focus, textarea:focus {
+        /* Dar um pouco de destaque nos elementos ativos */
+        border-color: gray;
+    }
+    
+     #camposDaEsquerda {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        align-items: center;
+        /* align-content: right; */
+        left: 0;
+    }
+     
+    .esquerda {
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        border: 0;
+        margin: 5px 5px 5px 5px;
+        color: gray;
+    }
+    
+    #camposDaDireita {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        align-content: right;
+        right: 0;
+    }
+    
+    .direita {
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        border: 0;
+        margin: 5px 5px 5px 5px;
+        color: gray;
+    }
+    
+    #msg {
+        height: 146px;
+    }
+    
+    #enviar {
+        background-color: #47C647;
+        position: absolute;
+        z-index: 1;
+        margin: 0 0 0 -240px;
+        padding: 9px 28px 9px 28px;
+        border: 0;
+        border-radius: 5px;
+        font-size: 18px;
+        color: white;
+        top: 450px;
+    }
+    
+}
