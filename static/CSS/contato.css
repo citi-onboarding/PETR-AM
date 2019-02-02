@@ -2,19 +2,24 @@
     font-family: BaronNeue;
     src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
 }
-
+.contato-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 #contato1 {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    min-height: 600px;
+    min-height: 650px;
+    max-height: 700px;
 }
 
 #contato2 {
     display: none;
-    min-height: 600px;
+    min-height: 650px;
+    max-height: 700px;
 }
 
 #background {
@@ -22,7 +27,7 @@
     height: 100%;
     background-color: #354B77;
     opacity: 0.6;
-    position: relative;
+    position: absolute;
 }   
 
 
@@ -57,23 +62,21 @@
 #campos {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 100px;
     justify-content: center;
     width: 100%;
     height: 450px;
+    justify-self: flex-end;
+    z-index: 1;
 }
 
 #camposDaEsquerda {
     width: 50%;
-    height: auto;
-    position: absolute;
+    height: 300px;
     z-index: 1;
     display: flex;
     flex-direction: column;
-    top: 100px;
-    align-content: right;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     left: 0;
 }
 
@@ -82,20 +85,18 @@
     height: 40px;
     border-radius: 5px;
     border: 0;
-    margin: 5px 30px 5px 5px;
+    margin: 5px 0 5px 0;
     color: gray;
 }
 
 #camposDaDireita {
     width: 50%;
-    height: auto;
-    position: absolute;
+    height: 300px;
     z-index: 1;
     display: flex;
     flex-direction: column;
-    top: 100px;
-    align-content: right;
-    right: 0;
+    justify-content: center;
+    align-items: center
 }
 
 .direita {
@@ -103,7 +104,7 @@
     height: 40px;
     border-radius: 5px;
     border: 0;
-    margin: 5px 5px 5px 30px;
+    margin: 5px 0px 5px 0px;
     color: gray;
 }
 
@@ -114,14 +115,19 @@
 #enviar {
     background-color: #47C647;
     z-index: 1;
-    left: 45%;
-    bottom: 0;
-    position: absolute;
     padding: 9px 28px 9px 28px;
     border: 0;
     border-radius: 5px;
     font-size: 18px;
     color: white;
+}
+.enviarDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    align-self: center;
 }
 
 input, textarea {
@@ -142,7 +148,6 @@ input:focus, textarea:focus {
         width: 100%;
         height: 100vh;
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -151,7 +156,7 @@ input:focus, textarea:focus {
         height: 100%;
         background-color: #354B77;
         opacity: 0.6;
-        position: relative;
+        position: absolute;
     }   
     
     /* STYLE TITULO EM GERAL */
@@ -161,9 +166,8 @@ input:focus, textarea:focus {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        position: absolute;
         z-index: 1;
-        top: 40px;
+        margin-top: 40px;
     }
     
     /* STYLE ICON DO TITULO */
@@ -184,14 +188,12 @@ input:focus, textarea:focus {
     
     #campos {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
         align-items: center;
         width: 100%;
         height: 500px;
         text-align: center;
         align-self: flex-end;
+        z-index: 1;
     }
 
     form {
@@ -200,6 +202,9 @@ input:focus, textarea:focus {
 
     .contato-form {
         width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     input, textarea {
@@ -214,12 +219,11 @@ input:focus, textarea:focus {
      #camposDaEsquerda {
         width: 100%;
         height: auto;
-        position: absolute;
         z-index: 1;
         display: flex;
         flex-direction: column;
-        top: 100px;
         align-items: center;
+        top: 100px;
         /* align-content: right; */
         left: 0;
     }
@@ -236,7 +240,6 @@ input:focus, textarea:focus {
     #camposDaDireita {
         width: 50%;
         height: auto;
-        position: absolute;
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -258,18 +261,19 @@ input:focus, textarea:focus {
         height: 146px;
     }
     
+    .enviarDiv {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     #enviar {
         background-color: #47C647;
         z-index: 1;
-        align-self: flex-end;
-        justify-self: center;
         padding: 9px 28px 9px 28px;
         border: 0;
         border-radius: 5px;
         font-size: 18px;
         color: white;
-        margin-top: 20px;
-        left: 35%;
     }
     
 }

@@ -1,6 +1,25 @@
-@font-face{
+@font-face {
     font-family: BaronNeue;
     src: url(../fonts/Baron\ Neue/Baron\ Neue.otf);
+}
+
+@font-face {
+    font-family: oratorSTD;
+    src: url(../fonts/OratorStd.otf);
+}
+
+:root {
+    --fontGeral:  oratorSTD, sans-serif;
+}
+/*mvv*/
+#sobreNosTudoMVV{
+    margin: 0;
+    color: white;
+    font-family: var(--fontGeral);
+    /* 'Franklin Gothic', sans-serif; */
+    height: 100%;
+    width: 100%;
+    background-color: #354B77;
 }
 /* STYLE DIV GERAL */
 #sobreNos1 {
@@ -38,7 +57,7 @@
     height: 20%;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
 }
 
 /* STYLE ICON DO TITULO */
@@ -212,12 +231,14 @@
     
 
     .MVV {
-        width: 90%;
+        width: 80%;
+        min-height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
         border: 5px solid #47C647;
-        margin: 0;
+        margin: 0 10% 0 10%;
+        position: 0;
     }
 
     .icon img {
@@ -226,7 +247,7 @@
     }
 
     .icon {
-        width: 50%;
+        width: 30%;
         height: 80%;
     }
 
@@ -236,13 +257,13 @@
 
     .missao {
         width: 100%;
-        height: 20%;
+        height: 30%;
         display: flex;
         flex-direction: row;
         text-align: center;
         align-items: center;
         margin-top: 10px;
-        margin-right: 15px;
+        margin-right: 0;
     }
     
     .visao {
@@ -256,7 +277,7 @@
     
     .valores {
         width: 100%;
-        height: 20%;
+        height: 30%;
         display: flex;
         flex-direction: row;
         text-align: center;
@@ -265,7 +286,7 @@
     }
 
     .descricao {
-        width: 100%;
+        width: 70%;
         display: flex;
         flex-direction: column;
     }
@@ -274,5 +295,10 @@
         width: 100%;
         text-align: center;
         font-size: 15px;
+    }
+    #mvv2-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
   }

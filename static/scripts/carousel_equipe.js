@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('.carousel').slick({
         infinite: true,
         slidesToShow: 3,
@@ -21,4 +21,4 @@ $(document).ready(function(){
             }
         ]
     });
-});
+});*/
