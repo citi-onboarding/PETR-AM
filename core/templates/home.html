@@ -174,40 +174,42 @@
             </div>
 
             <!-- DIV DO MVV -->
-            <div class="MVV">
-                <!-- DIV MISSAO -->
-                <div class="missao">
-                    <div class="icon">
-                        <img alt="missão" src="{% static 'imagens/MVV/missao.png' %}">
-                    </div>
-                    <div class="descricao">
-                        <p class="topic">Missão</p>
-                        <div class="mensagem">
-                            <p>Promover a ligação dos alunos ao mercado de trabalho através de experiências reais, proporcionando o aprendizado prático para a formação de empreendedores e profissionais de excelência.</p>
+            <div id="mvv2-container">
+                <div class="MVV">
+                    <!-- DIV MISSAO -->
+                    <div class="missao">
+                        <div class="icon">
+                            <img alt="missão" src="{% static 'imagens/MVV/missao.png' %}">
+                        </div>
+                        <div class="descricao">
+                            <p class="topic">Missão</p>
+                            <div class="mensagem">
+                                <p>Promover a ligação dos alunos ao mercado de trabalho através de experiências reais, proporcionando o aprendizado prático para a formação de empreendedores e profissionais de excelência.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- DIV VISAO -->
-                <div class="visao">
-                    <div class="icon">
-                        <img alt="visão" src="{% static 'imagens/MVV/visao.png' %}">
-                    </div>
-                    <div class="descricao">
-                        <p class="topic">Visão</p>
-                        <div class="mensagem">
-                            <p>Selecionar e capacitar alunos para realização de projetos, participação ativa na rede e conhecimento de mercado.</p>
+                    <!-- DIV VISAO -->
+                    <div class="visao">
+                        <div class="icon">
+                            <img alt="visão" src="{% static 'imagens/MVV/visao.png' %}">
+                        </div>
+                        <div class="descricao">
+                            <p class="topic">Visão</p>
+                            <div class="mensagem">
+                                <p>Selecionar e capacitar alunos para realização de projetos, participação ativa na rede e conhecimento de mercado.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- DIV VALORES -->
-                <div class="valores">
-                    <div class="icon">
-                        <img alt="valores" src="{% static 'imagens/MVV/valores.png' %}">
-                    </div>
-                    <div class="descricao">
-                        <p class="topic">Valores</p>
-                        <div class="mensagem">
-                            <p>Pró atividade<br>Compromisso com resultados<br>Transparência<br>Vontade de crescer</p>
+                    <!-- DIV VALORES -->
+                    <div class="valores">
+                        <div class="icon">
+                            <img alt="valores" src="{% static 'imagens/MVV/valores.png' %}">
+                        </div>
+                        <div class="descricao">
+                            <p class="topic">Valores</p>
+                            <div class="mensagem">
+                                <p>Pró atividade<br>Compromisso com resultados<br>Transparência<br>Vontade de crescer</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -292,7 +294,7 @@
             </div>
             <div id="background"></div>
          <div id="campos">
-                <form method="POST" name='contato'>
+                <form method="POST" name='contato' class='contato-form'>
                     {% csrf_token %}<!--Necessario para reconhecer o form-->
                     <div id="camposDaEsquerda">
                         <input class="esquerda" type="text" name="nome" placeholder="Nome*" required="required">
@@ -304,7 +306,7 @@
                         <input class="direita" type="text" name="assunto" placeholder="Assunto">
                         <textarea class="direita" id="msg" name="mensagem" placeholder="Deixe-nos uma mensagem!"></textarea>  
                     </div>
-                    <button id ="enviar" type="submit">ENVIAR</button>
+                    <div class="enviarDiv"><button id ="enviar" type="submit">ENVIAR</button></div>
                 </form>
             </div>
         </div>
@@ -319,7 +321,7 @@
             </div>
             <div id="background"></div>
             <div id="campos">
-                <form method="POST" name='contato'>
+                <form method="POST" name='contato' class='contato-form'>
                     {% csrf_token %}
                     <input class="esquerda" type="text" name="nome" placeholder="Nome*" required="required">
                     <input class="esquerda" type="text" name="phone" placeholder="Telefone">
@@ -327,7 +329,7 @@
                     <input class="esquerda" type="text" name="conheceu" placeholder="Como você conheceu a PETR-AM?">
                     <input class="direita" type="text" name="assunto" placeholder="Assunto">
                     <textarea class="direita" id="msg" name="mensagem" placeholder="Deixe-nos uma mensagem!"></textarea>  
-                    <button id ="enviar" type="submit">ENVIAR</button>
+                    <div class="enviarDiv"><button id ="enviar" type="submit">ENVIAR</button></div>
                 </form>
             </div>
         </div>
@@ -452,6 +454,35 @@
     <!--Script das coisas gerais-->
     <script type="text/javascript" src="{% static 'scripts/main.js' %}"></script>
     <!--Script carrossel equipe-->
-    <script type="text/javascript" src="{% static 'scripts/carousel_equipe.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+                arrows: true,
+                centerMode: false,
+                draggable: true,
+                nextArrow: '<button type="button" id="equipe-next"><img alt="próximo" id="equipe-seta-next" src="{% static "imagens/equipe/sNext.svg" %}"></button>',
+                prevArrow: '<button type="button" id="equipe-prev"><img alt="anterior" id="equipe-seta-prev" src="{% static "imagens/equipe/sPrev.svg" %}"></button>',
+                responsive: [
+                    {
+                    breakpoint: 751,
+                    settings: {
+                        nextArrow: '<button type="button" id="equipe-next"><img alt="próximo" id="equipe-seta-next" src="{% static "imagens/equipe/sNext.svg" %}"></button>',
+                        prevArrow: '<button type="button" id="equipe-prev"><img alt="anterior" id="equipe-seta-prev" src="{% static "imagens/equipe/sPrev.svg" %}"></button>',
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        arrows: true,
+                        centerMode: true
+                    }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>
