@@ -24,6 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -128,3 +129,5 @@ EMAIL_HOST_USER = config('MY_EMAIL')
 EMAIL_HOST_PASSWORD = config('MY_PASSWORD')
 
 # Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
